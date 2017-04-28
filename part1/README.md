@@ -129,7 +129,7 @@ Figure 8 and Figure 9 answer the question of "How quickly ..." and they can be u
 
 ### Figure 9:Average Speed of Each Trip
 
-![alt text](https://github.com/huilyu2/project-spring2017/blob/master/part1/output-images/Average_speed_of_Trips.png)
+![alt text](https://github.com/huilyu2/project-spring2017/blob/master/part1/output-images/Average_speed_of_each_trips.png)
 
 * Approach: 
 
