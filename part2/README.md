@@ -23,6 +23,14 @@ For this part of code, I refer to the previous assignment on defining a class in
  About the question of "What types of grants are supported by IMLS", I think this is an frequency amount distribution plot. At first, I tried to use histgram, but it can not define the specific x-asxis and y-axis. Histgram always records the repeating time of the number within data.
  
  After that, I used barplot, which can decide the x-axis and y axis. I used the xticks() function to replace the numeric number with the charactor, which is the type of grants program. I also sorted the data with the descending sequence, and show the exact number on the top of each bar.
+ 
+ * Conclusion:
+ 
+ From the plot, we can see each type of Grants Program and their exactly number. "IA" is the most popular Grants Program type.
+ 
+ We can clearly see three clusters, the most popular part starts with "I", whcih included "IA, IC, IG, IL, IM, IS"; the second part starts with "L", which included "LE, LG, LI, LL, LT"; the third part starts with "M", which included "MA, MG, MH, ML, MN, MP"; the forth part starts with "N", which included "NC, ND, NE, NG, NL, NO, NP, NR", and the last two parts starts with "R" and "S", which is included "RE, SP, ST". 
+ 
+ There shows the descending trend from the plot. And there is really big difference between the most and the least popular type. From program type starts with "I" and "M", there are two sharp decline gaps, which separate the whole plot into three part approximately (the most popular, middle, the least popular).
 
 
 ## 2. The grants distributed across the United States
