@@ -1,5 +1,5 @@
 # Final Project: LIS590DV - Spring 2017
-## Group Athena: Yuxiang Ling, Hui Lyu, Qi Qi, Yuwei Chen
+## Group Athena: Yuxiang Ling, Qi Qi, Yuwei Chen, Hui Lyu
 
 Your final project is composed of four parts.  You will work in groups of three
 or four people; each person will be expected to participate in the project.
