@@ -17,9 +17,9 @@ For this part of code, I refer to the previous assignment on defining a class in
 
 * Explanation: 
 
- About the question of "What types of grants are supported by IMLS", I think this is an frequency amount distribution plot. At first, I tried to use histgram, but it can not define the specific x-asxis and y-axis. However, histgram always records the repeating time of the number within data.
+ About the question of "What types of grants are supported by IMLS", I think this is an frequency amount distribution plot. At first, I tried to use histgram, but it can not define the specific x-asxis and y-axis. Histgram always records the repeating time of the number within data.
  
- After that, I used barplot, which can decide the x-axis and y axis. I use the xticks() function to replace the numeric number with the charactor, which is the type of grants program. I also sorted the data with the descending sequence, and show the exact number on the top of each bar.
+ After that, I used barplot, which can decide the x-axis and y axis. I used the xticks() function to replace the numeric number with the charactor, which is the type of grants program. I also sorted the data with the descending sequence, and show the exact number on the top of each bar.
 
 
 ## 2. Routes with Different Numbers of Trips
@@ -29,11 +29,11 @@ Each route may correspond to multiple trips. To get a basic understanding of how
 
 * Approach: 
 
-  histogram (number of trips for each route as x-axis, count of routes as y-axis, "Purples" colormap, dashed grid line on y-axis)
+  histgram (number of trips for each route as x-axis, count of routes as y-axis, "Purples" colormap, dashed grid line on y-axis)
 
 * Explanation: 
 
-  Histogram is one of the best ways to demonstrate the distribution. The result shows that it is an obvious right-skewed distribution. I set the colormap to intuitively see the tendency of the data based on the depth of the color. Besides, I only turn on the grid line on y-axis since the edges of each bar can defintely represent the exact value of x-axis.
+  Histgram is one of the best ways to demonstrate the distribution. The result shows that it is an obvious right-skewed distribution. I set the colormap to intuitively see the tendency of the data based on the depth of the color. Besides, I only turn on the grid line on y-axis since the edges of each bar can defintely represent the exact value of x-axis.
   
   It can be found that for section "150-200", there is no value. I suppose it should be a key feature.
 
