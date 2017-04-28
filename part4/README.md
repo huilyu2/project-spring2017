@@ -15,7 +15,7 @@ Firstly, the sum of these attributes have been calculated and displayed on the i
 
 There are multiple files in the given dataset: 
 
-stops, stop_times, trips, routes, shapes, agency, calendar, calendar_dates, fare_rules, fare_attributes
+* stops, stop_times, trips, routes, shapes, agency, calendar, calendar_dates, fare_rules, fare_attributes
 
 To better understand the relationships between the above attributes, several key prerequisites have been emphasized:
 
