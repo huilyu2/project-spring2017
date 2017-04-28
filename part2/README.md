@@ -53,6 +53,10 @@ For this part of code, I refer the example code of plotly and the method of how 
   
  In the first version of this part, I used the baground map of USA just like the example in the plotly offical guide. However, some of the data can not be showed on the map and the text box can not be showed neither. The reason for this bug is that some programs are not in the main land of USA which is out of the baground map. I chose not to delete the outliners but to use a bigger map, so I changed the baground map to north American map and it showed the data and text successfully. 
  
+ * Conclusion: 
+ 
+ The largest and the most dense part of the Total Amount Awarded acorss America is concentrate on the east part, like New York these kind of large-scale city. And also there is a cluster around Chicago, which is the largest city within the middle part of the US. This is reasonable.
+ 
 ## 3. GDP Compared with the Grants Amount by state.
 
 ### Figure 1: GDP vs Grants Amount by state based on American map
