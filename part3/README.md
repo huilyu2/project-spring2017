@@ -2,7 +2,7 @@
 ### Authors: Yuxiang Ling & Yuwei Chen of Group Athena
 This part of Data Visualization aims to build a function to visualize the overview of the data
 
-The test data is made my outselves.
+The test data is designed my ourselves.
 
 Packages be used: folium, vincent, pandas, numpy 
 
@@ -17,7 +17,7 @@ For this part of code, I used folium package to make the main map.
 
 * Explanation: 
 
-  The Scatter map show the location and 3 quatitive data on the world map. 
+  The Scatter map shows the location and 3 quatitive data on the world map. 
   
   The size of scatter is based on the number of the quantitive data. The data from different quatitive columns have different shapes of markers. The data from different qautitive column are put in different layers and a layer contral box can be found on the top right of the map. The users can use the layer contral box to chose which quatitive data to be showed on the map. 
   
@@ -30,7 +30,8 @@ For this part of code, I used folium package to make the main map.
   
   * Work for the future: Still need a legend to show the marker color of different categories
 
-## 2. HTML popup: detail informatin of the data 
+## 2. Detail informatin of the data 
+### HTML popup: detail informatin of the data 
 The main goal of this part is to show the detail information of each marker on the main map.
 
 * Approach: 
@@ -44,7 +45,8 @@ The main goal of this part is to show the detail information of each marker on t
   Click the marker, the main information, including the name, quatitive data and category, was showed in a html popup for this marker.
     
   
-## 3. Bar chart popup: The quantitive data of different categories 
+## 3. The categories of the data
+### Bar chart popup: The quantitive data of different categories
 This part aim to compare the different quantitive data of different categories on the main map.  
 
 * Approach: 
@@ -56,7 +58,8 @@ This part aim to compare the different quantitive data of different categories o
   To put the chart in the popup, I used Vincent package to make vega chart and put it in the folium popup on the second layer.
   
   When we click the markers on the second layer, the chart can be showed in the popup that we can compare the different categories.
-## 4. Line chart popup: the quantitive data of different datetime
+## 4. The trend of the data
+### Line chart popup: the quantitive data of different datetime
 This part aim to see the trend of the quantitive data through the time.  
 
 * Approach: 
@@ -75,4 +78,15 @@ This part aim to see the trend of the quantitive data through the time.
 
 * Yuwei Chen:
   Make the code of category color visualisation and transform the code to function
- ...
+
+## References
+* Web Mapping Tutorial with Python and Folium
+  http://pythonhow.com/web-mapping-with-python-and-folium
+* Quickstart of Vincent
+  http://vincent.readthedocs.io/en/latest/quickstart.html
+* How to create Popups
+  http://nbviewer.jupyter.org/github/bibmartin/folium/blob/issue288/examples/Popups.ipynb
+* Visualizing Indego bike geoson data in Python using Folium
+  http://www.kobakhit.com/beginner/2016/03/06/visualizing-indego-bike-geoson-data-in-python-using-folium.html
+* Folium Map Tiles
+  https://deparkes.co.uk/2016/06/10/folium-map-tiles/
