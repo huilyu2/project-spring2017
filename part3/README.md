@@ -2,14 +2,16 @@
 ### Authors: Yuxiang Ling & Yuwei Chen of Group Athena
 This part of Data Visualization aims to build a function to visualize the overview of the data.
 
-The test data is designed my ourselves.
+The test data is designed by ourselves.
 
-Packages be used: folium, vincent, pandas, numpy 
+Packages be used: folium, vincent, pandas, numpy, randomcolor
 
 The ideal visualiztion is to show all the graph on one image or window.
+
+![alt text](https://github.com/huilyu2/project-spring2017/blob/master/part3/Screenshot.png)
 ## 1. The distribution of quantative data across the world
 
-### Map : main map of quatative data
+### Map : main map of quantative data
 For this part of code, I used folium package to make the main map.
 * Approach: 
 
@@ -79,6 +81,11 @@ This part aim to see the trend of the quantitive data through the time.
 * Explanation: 
 
   I used Vincent pakage to make the vega chart for this part and I put it on the third layer allowed us to see the trend of the data by click the markers.
+  
+## 5. Transform to general function
+Based on above functions, first I extracted each of them into a independent function, then use a function to call them. For general data visualization purpose, add the user interactive input and modify the variable. Since we do not know how many categories will be in the categorical data and this will influence the icon coloring, so here I get the list of categories and assign each group color randomly. The subcomponent functions will receive the color list from parameters called by the main function "user_input()".
+
+When I recreate the function for general purpose data visualization, I adopted Composite design pattern. Analyzed the original code and create its tree structure of simple and composite subfunctions. By creating multiple functions instead of mergin all functions into one making the code clean and easy to understand.
 
 
 ## Contributions of Members
@@ -87,7 +94,8 @@ This part aim to see the trend of the quantitive data through the time.
   Make the map and 3 popup  
 
 * Yuwei Chen:
-  Make the code of category color visualisation and transform the code to function
+  1. Develop differentiating category coloring
+  2. Develop function for general data visualization
 
 ## References
 * Web Mapping Tutorial with Python and Folium
