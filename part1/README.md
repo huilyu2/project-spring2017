@@ -131,6 +131,9 @@ Having an overview of the whole routes speed info, let pick up one route called 
   This figure is just for ORANGE route stop information. I created this figure to help reader see different stop areas clearly. According to the figure, there are 7 stops and 6 stop areas in total colored with 7 different colors. Because reader might not differentiate stop area in the following figure. I used 7 bus stops to create a new attribute called stop "stop_area_code" for easy shape coloring. All shape point belong to the same stop area will have the same color.
 
 ### Figure 11: Route Orange Speed
+
+![alt text](https://github.com/huilyu2/project-spring2017/blob/master/part1/output-images/Route%20Orange%20Speed.png)
+
 * Approach: 
 
   scatter plot group by stop_area(legend of transit speed "< 300", "300 - 600", "600 <")
