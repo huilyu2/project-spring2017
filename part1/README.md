@@ -100,7 +100,7 @@ To get an overview of how shapes look like for each route, I make a line plot of
 
 ## 4. Bus Speeds for Shapes and Routes
 Figure 8 and Figure 9 answer the question of "How quickly ..." and they can be used for transit data analysis together. The key attributes used in Figure 7 are shape_id, lat, lon in SHAPE table, stop_time in STOP_TIMES. We fisrt compute the period that each trips(represent its route) will take and use this information to find out how many transit trips(frequency) this route can run per hour.
-### Figure 8: Transit Freuquency
+### Figure 8: Transit Frequency
 
 * Approach: 
 
