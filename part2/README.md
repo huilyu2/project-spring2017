@@ -7,7 +7,7 @@ The GDP Data by state can be found at https://commons.wikimedia.org/wiki/Data:Be
 
 ## 1. Grants' Type Contribution
 
-### Figure 1: Grants Program Type Distribution
+### Figure: Grants Program Type Distribution
 For this part of code, I refer to the previous assignment on defining a class in course LIS590DV, and then pass the csv dataset into it.
 * Approach: 
 
