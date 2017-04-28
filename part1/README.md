@@ -125,6 +125,9 @@ Figure 8 and Figure 9 answer the question of "How quickly ..." and they can be u
 Having an overview of the whole routes speed info, let pick up one route called "ORANGE" and dig deeper into its speed info. The following two figures show the route of "ORANGE" route. The former show the different stop areas and this figure is to prepared for the latter one. The second one shows different speed between stops.
 
 ### Figure 10: Route Orange Bus Stop
+
+![alt text](https://github.com/huilyu2/project-spring2017/blob/master/part1/output-images/Route%20Orange%20Bus%20Stop.png)
+
 * Approach: 
 
   scatter plot group by stop_area
