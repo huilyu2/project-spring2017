@@ -55,12 +55,14 @@ For this part of code, I refer the example code of plotly and the method of how 
  
  * Conclusion: 
  
- The largest and the most dense part of the Total Amount Awarded acorss America is concentrate on the east part, like New York these kind of large-scale city. And also there is a cluster around Chicago, which is the largest city within the middle part of the US. This is reasonable.
+ The largest and the most dense part of the Total Amount Awarded acorss America is concentrate on the east part, like New York these kind of large-scale city. And also there is a cluster around Chicago, which is the largest city within the middle part of the US. This is reasonable. There are more people and more organizations in such vibrant region, which are more likely to get more awarded amount.
  
 ## 3. GDP Compared with the Grants Amount by state.
 
 ### Figure 1: GDP vs Grants Amount by state based on American map
 To get an overview of the relationship between the economic factors in a zip code and the grants from IMLS, I make a plot based on the North America map with plotly.
+
+![Grants Program Type Distribution](https://github.com/huilyu2/project-spring2017/blob/master/part2/Output%20Images/Interaction%20of%20GDP%20vs%20Grants%20Amount%20by%20State.png)
 
 * Approach: 
 
@@ -70,9 +72,15 @@ To get an overview of the relationship between the economic factors in a zip cod
 
  In this part, I think "the economic factors in a zip code" means the GDP of every state in America. So I collect GDP data by state within the scope of years and try to combine this data together with Grants Amount data.
  I used colorbar to show the amount of GDP, and when we point to each state, it will show the state name, the exact GDP and the Grants Amount. I chose 2005 year, and draw the plot.
+ 
+ * Conclusion:
+ 
+ American GDP is higher in west coast, like California; in east coast, like New York; and in Texas and Florida. In these area, Grants are likely to get higher total rewarded amount. We can see the exactly Grants Amount when we move the mouse to each state. 
 
 ### Figure 2: Relation between GDP and Grants Amount
 To get an specific view of the relationship between the economic factors in a zip code and the grants from IMLS, I make a compared plot with the Bokeh framework.
+
+![Grants Program Type Distribution](https://github.com/huilyu2/project-spring2017/blob/master/part2/Output%20Images/Relation%20between%20GDP%20and%20Grants%20Amounts.png)
 
 * Approach: 
 
@@ -86,6 +94,10 @@ To get an specific view of the relationship between the economic factors in a zi
  But with Bokeh, the axes should be numeric, which can not shown as character type. So I just put the exact state name ordered by first capital letter, which is corresponding to the number 1~51. 
  
  Besides, I also want to add the "year" label to show the variace with time. So I tried to use box widgets to make a list to choose from. But I had some hard time to load in the data, and changed the data by the drop-down list. I wish I cound achieve this function in the future.
+ 
+ * Conclusion:
+ 
+ From the plot, we can select each state and see the corresponding GDP and total Grants Amount. Basiclly, there is a stable rule: A state with higher GDP, this state is more likely to have higher total Grants Amount. 
 
 ## Contributions of Members
 
