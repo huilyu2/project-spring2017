@@ -12,7 +12,7 @@ The GDP Data by state can be found at https://commons.wikimedia.org/wiki/Data:Be
 ### Figure: Grants Program Type Distribution
 For this part of code, I refer to the previous assignment on defining a class in course LIS590DV, and then pass the csv dataset into it.
 
-![Top 10 Routes with Most Number of Trips for Each Route](https://github.com/huilyu2/project-spring2017/blob/master/part2/Output%20Images/Grants%20Program%20Type%20Distribution.png)
+![Grants Program Type Distribution](https://github.com/huilyu2/project-spring2017/blob/master/part2/Output%20Images/Grants%20Program%20Type%20Distribution.png)
 
 * Approach: 
 
