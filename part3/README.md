@@ -1,6 +1,6 @@
 # System for Receiving New Data
 ### Authors: Yuxiang Ling & Yuwei Chen of Group Athena
-This part of Data Visualization aims to build a function to visualize the overview of the data
+This part of Data Visualization aims to build a function to visualize the overview of the data.
 
 The test data is designed my ourselves.
 
@@ -26,9 +26,13 @@ For this part of code, I used folium package to make the main map.
   Different color is given to the data based on their categories.
   
   
-  * Strengths: All the quatitive data from different columns can be showed on one map and we can compare the quatitive data base on the size of the markers.
+* Strengths: 
+
+All the quatitive data from different columns can be showed on one map and we can compare the quatitive data base on the size of the markers.
   
-  * Work for the future: Still need a legend to show the marker color of different categories
+* Work for the future: 
+
+Still need a legend to show the marker color of different categories
 
 ## 2. Detail informatin of the data 
 ### HTML popup: detail informatin of the data 
@@ -43,6 +47,7 @@ The main goal of this part is to show the detail information of each marker on t
   I made a html to store the main information of each marker and use the IFrame from folium package to put it in the popup.
   
   Click the marker, the main information, including the name, quatitive data and category, was showed in a html popup for this marker.
+  
     
   
 ## 3. The categories of the data
@@ -58,6 +63,11 @@ This part aim to compare the different quantitive data of different categories o
   To put the chart in the popup, I used Vincent package to make vega chart and put it in the folium popup on the second layer.
   
   When we click the markers on the second layer, the chart can be showed in the popup that we can compare the different categories.
+  
+* Work for the future: 
+
+Add the quatitive data of each markers on the popup
+
 ## 4. The trend of the data
 ### Line chart popup: the quantitive data of different datetime
 This part aim to see the trend of the quantitive data through the time.  
