@@ -1,0 +1,1531 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_9f091e85aea34e37abd7981e2927ac75 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+    
+            <style> #vega_f61ac59987b54f73a36f866a78042aa5 {
+                position : relative;
+                width : 450.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vega/1.4.3/vega.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-dvf/0.3.0/leaflet-dvf.markers.min.js"></script>
+    
+            <style> #vega_fcb955124eb040cf8eff4b4d883b442f {
+                position : relative;
+                width : 450.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_c7af3fe4fb42495d95912800e3537532 {
+                position : relative;
+                width : 450.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_d47c0e42fd444eff9f4c8f3b670ce7b6 {
+                position : relative;
+                width : 450.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_36f233a9abb54106a389c06012d0c11e {
+                position : relative;
+                width : 450.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_5428203e77cf47ee953a7923b1a9b64c {
+                position : relative;
+                width : 450.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_0276249b91e1454490a1050d5edaece6 {
+                position : relative;
+                width : 450.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_cead4744a75043a4bd0a452cfac357c0 {
+                position : relative;
+                width : 450.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_dd39208b524d430092b825bbc3641dca {
+                position : relative;
+                width : 450.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_0c984b45b27c4a8991e23d15a6ce97fa {
+                position : relative;
+                width : 450.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_9f47a12f182949e9a35a12237233e354 {
+                position : relative;
+                width : 450.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_1c6de2dff8f148bdb2e44eb7074f70ba {
+                position : relative;
+                width : 450.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_b7c46fab94814f15be43d3e0ea2135a8 {
+                position : relative;
+                width : 450.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_2bb74583c6e64da19c5f39ff5ff1423e {
+                position : relative;
+                width : 450.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_eca6b145f7c64762abad2f4f9b62a5ce {
+                position : relative;
+                width : 450.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_f36aa477946a4c5a9c85a86b687d9ce8 {
+                position : relative;
+                width : 450.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_dfb4c0b2ea5e4869968fb78cb044b53e {
+                position : relative;
+                width : 450.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_6d13b7b2fcc1478fbc9e08f4aa6bbe1c {
+                position : relative;
+                width : 450.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_24466c0ac66149f6b633cc175dcf0df0 {
+                position : relative;
+                width : 450.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_7cb8e5f3e3754840bb73c16ae891f882 {
+                position : relative;
+                width : 450.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_6c1b12ce14954bdaa28c7c50ae021d1c {
+                position : relative;
+                width : 450.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_5d884139e99a4af6a5fe07519a2ce954 {
+                position : relative;
+                width : 450.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_329f140fe06b46c3af43c26a05e7ef32 {
+                position : relative;
+                width : 450.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_8b6d2112a67f4dbd9361919f6789a2b2 {
+                position : relative;
+                width : 450.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_c7174f96e6994aeea70f32566b2c9c41 {
+                position : relative;
+                width : 450.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_46d03ee87c74486ca0f903b2d0168085 {
+                position : relative;
+                width : 450.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_9f091e85aea34e37abd7981e2927ac75" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var southWest = L.latLng(-90, -180);
+                var northEast = L.latLng(90, 180);
+                var bounds = L.latLngBounds(southWest, northEast);
+            
+
+            var map_9f091e85aea34e37abd7981e2927ac75 = L.map(
+                                  'map_9f091e85aea34e37abd7981e2927ac75',
+                                  {center: [27.967769230769232,-55.09584615384616],
+                                  zoom: 6,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_4d38daafaac1453f9dfa25b975b1a32c = L.tileLayer(
+                'https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    continuousWorld: false,
+                    noWrap: false,
+                    attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_9f091e85aea34e37abd7981e2927ac75);
+
+        
+    
+            var feature_group_2db2435d98374ca8a3d757381b09c040 = L.featureGroup(
+                ).addTo(map_9f091e85aea34e37abd7981e2927ac75);
+        
+    
+
+            var circle_marker_03f6ebd7094a4456a6a35a57c27a386b = L.circleMarker(
+                [37.175,-113.408],
+                {
+                    color: '#83fcd6',
+                    weight: 2,
+                    fillColor: '#83fcd6',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(6.6)
+                .addTo(feature_group_2db2435d98374ca8a3d757381b09c040);
+            
+    
+            var popup_b73b933798f74a9d92cb1a7d48a9ee82 = L.popup({maxWidth: '300'});
+
+            
+                var i_frame_7377e879393a40d88f62b90b9acfc4c4 = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIG5hbWU6IEplcnJ5PGJyPgogICAgbnVtMTogNjY8YnI+CiAgICBudW0yOiA5MDxicj4KICAgIG51bTM6IDg4PGJyPgogICAgY2F0ZWdvcnk6IEMxPGJyPgogICAgICAgIA==" width="150" style="border:none !important;" height="100"></iframe>')[0];
+                popup_b73b933798f74a9d92cb1a7d48a9ee82.setContent(i_frame_7377e879393a40d88f62b90b9acfc4c4);
+            
+
+            circle_marker_03f6ebd7094a4456a6a35a57c27a386b.bindPopup(popup_b73b933798f74a9d92cb1a7d48a9ee82);
+
+            
+        
+    
+
+            var circle_marker_9201c6e297fa4a479eac7ac6cccf78d9 = L.circleMarker(
+                [37.178,-113.411],
+                {
+                    color: '#d36945',
+                    weight: 2,
+                    fillColor: '#d36945',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(7.6)
+                .addTo(feature_group_2db2435d98374ca8a3d757381b09c040);
+            
+    
+            var popup_f5085e2fecb548d9bf764ae74b9eef06 = L.popup({maxWidth: '300'});
+
+            
+                var i_frame_4cd010ce18834f70bf8cdde2c3eaa1e2 = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIG5hbWU6IEFubmE8YnI+CiAgICBudW0xOiA3Njxicj4KICAgIG51bTI6IDY2PGJyPgogICAgbnVtMzogNDU8YnI+CiAgICBjYXRlZ29yeTogQzI8YnI+CiAgICAgICAg" width="150" style="border:none !important;" height="100"></iframe>')[0];
+                popup_f5085e2fecb548d9bf764ae74b9eef06.setContent(i_frame_4cd010ce18834f70bf8cdde2c3eaa1e2);
+            
+
+            circle_marker_9201c6e297fa4a479eac7ac6cccf78d9.bindPopup(popup_f5085e2fecb548d9bf764ae74b9eef06);
+
+            
+        
+    
+
+            var circle_marker_fba036f4bca04e87850a6d3d0ad127fd = L.circleMarker(
+                [37.172,-113.413],
+                {
+                    color: '#72bc23',
+                    weight: 2,
+                    fillColor: '#72bc23',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(6.5)
+                .addTo(feature_group_2db2435d98374ca8a3d757381b09c040);
+            
+    
+            var popup_1a09586e704f4958a37081335dceba19 = L.popup({maxWidth: '300'});
+
+            
+                var i_frame_7a9841b32990460ebfa3b5407eed17d5 = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIG5hbWU6IFZpbmNlbnQ8YnI+CiAgICBudW0xOiA2NTxicj4KICAgIG51bTI6IDc3PGJyPgogICAgbnVtMzogNzg8YnI+CiAgICBjYXRlZ29yeTogQzM8YnI+CiAgICAgICAg" width="150" style="border:none !important;" height="100"></iframe>')[0];
+                popup_1a09586e704f4958a37081335dceba19.setContent(i_frame_7a9841b32990460ebfa3b5407eed17d5);
+            
+
+            circle_marker_fba036f4bca04e87850a6d3d0ad127fd.bindPopup(popup_1a09586e704f4958a37081335dceba19);
+
+            
+        
+    
+
+            var circle_marker_980d7e5c2ce94590907219079514e859 = L.circleMarker(
+                [37.174,-113.414],
+                {
+                    color: '#83fcd6',
+                    weight: 2,
+                    fillColor: '#83fcd6',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(6.7)
+                .addTo(feature_group_2db2435d98374ca8a3d757381b09c040);
+            
+    
+            var popup_b57e95e759364a9d973541fdeeb0c760 = L.popup({maxWidth: '300'});
+
+            
+                var i_frame_c6d15d3ede20459c9eeb4b6240b0cd0b = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIG5hbWU6IE1hcms8YnI+CiAgICBudW0xOiA2Nzxicj4KICAgIG51bTI6IDg4PGJyPgogICAgbnVtMzogOTk8YnI+CiAgICBjYXRlZ29yeTogQzE8YnI+CiAgICAgICAg" width="150" style="border:none !important;" height="100"></iframe>')[0];
+                popup_b57e95e759364a9d973541fdeeb0c760.setContent(i_frame_c6d15d3ede20459c9eeb4b6240b0cd0b);
+            
+
+            circle_marker_980d7e5c2ce94590907219079514e859.bindPopup(popup_b57e95e759364a9d973541fdeeb0c760);
+
+            
+        
+    
+
+            var circle_marker_8b8145effc2644879c254129715be275 = L.circleMarker(
+                [51.127,-178.08],
+                {
+                    color: '#72bc23',
+                    weight: 2,
+                    fillColor: '#72bc23',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(4.6)
+                .addTo(feature_group_2db2435d98374ca8a3d757381b09c040);
+            
+    
+            var popup_a65056e6ea314080b4e3a3d7b6b8695d = L.popup({maxWidth: '300'});
+
+            
+                var i_frame_ee8923054f1041108c4352794206f3b6 = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIG5hbWU6IFdlaTxicj4KICAgIG51bTE6IDQ2PGJyPgogICAgbnVtMjogNTU8YnI+CiAgICBudW0zOiA1Nzxicj4KICAgIGNhdGVnb3J5OiBDMzxicj4KICAgICAgICA=" width="150" style="border:none !important;" height="100"></iframe>')[0];
+                popup_a65056e6ea314080b4e3a3d7b6b8695d.setContent(i_frame_ee8923054f1041108c4352794206f3b6);
+            
+
+            circle_marker_8b8145effc2644879c254129715be275.bindPopup(popup_a65056e6ea314080b4e3a3d7b6b8695d);
+
+            
+        
+    
+
+            var circle_marker_d6b9541a6dc542ff9be6b3d98005378a = L.circleMarker(
+                [21.648,143.032],
+                {
+                    color: '#d36945',
+                    weight: 2,
+                    fillColor: '#d36945',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(3.3)
+                .addTo(feature_group_2db2435d98374ca8a3d757381b09c040);
+            
+    
+            var popup_84d75239a526444eb09eb46e4ffe7809 = L.popup({maxWidth: '300'});
+
+            
+                var i_frame_682edbf91bb54a18a92bacf072e637fb = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIG5hbWU6IEpha2U8YnI+CiAgICBudW0xOiAzMzxicj4KICAgIG51bTI6IDc3PGJyPgogICAgbnVtMzogNjg8YnI+CiAgICBjYXRlZ29yeTogQzI8YnI+CiAgICAgICAg" width="150" style="border:none !important;" height="100"></iframe>')[0];
+                popup_84d75239a526444eb09eb46e4ffe7809.setContent(i_frame_682edbf91bb54a18a92bacf072e637fb);
+            
+
+            circle_marker_d6b9541a6dc542ff9be6b3d98005378a.bindPopup(popup_84d75239a526444eb09eb46e4ffe7809);
+
+            
+        
+    
+
+            var circle_marker_dd157ed1ad4c4f92b15b6dd3801e2196 = L.circleMarker(
+                [19.103,-64.754],
+                {
+                    color: '#72bc23',
+                    weight: 2,
+                    fillColor: '#72bc23',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(2.4)
+                .addTo(feature_group_2db2435d98374ca8a3d757381b09c040);
+            
+    
+            var popup_a8edca8a52c94bb69c551645c0a942ed = L.popup({maxWidth: '300'});
+
+            
+                var i_frame_2bcdef178e034f5d90fc2d2ee408a576 = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIG5hbWU6IEpvaG48YnI+CiAgICBudW0xOiAyNDxicj4KICAgIG51bTI6IDMzPGJyPgogICAgbnVtMzogNzg8YnI+CiAgICBjYXRlZ29yeTogQzM8YnI+CiAgICAgICAg" width="150" style="border:none !important;" height="100"></iframe>')[0];
+                popup_a8edca8a52c94bb69c551645c0a942ed.setContent(i_frame_2bcdef178e034f5d90fc2d2ee408a576);
+            
+
+            circle_marker_dd157ed1ad4c4f92b15b6dd3801e2196.bindPopup(popup_a8edca8a52c94bb69c551645c0a942ed);
+
+            
+        
+    
+
+            var circle_marker_31d247a9a93841f8bcab378d011dc991 = L.circleMarker(
+                [-10.28,161.56],
+                {
+                    color: '#83fcd6',
+                    weight: 2,
+                    fillColor: '#83fcd6',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(7.7)
+                .addTo(feature_group_2db2435d98374ca8a3d757381b09c040);
+            
+    
+            var popup_d8f3c82689ca436997a65de0c357e4d2 = L.popup({maxWidth: '300'});
+
+            
+                var i_frame_f53df998ca164419aff68e55681344b5 = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIG5hbWU6IEpveTxicj4KICAgIG51bTE6IDc3PGJyPgogICAgbnVtMjogNTU8YnI+CiAgICBudW0zOiA0NDxicj4KICAgIGNhdGVnb3J5OiBDMTxicj4KICAgICAgICA=" width="150" style="border:none !important;" height="100"></iframe>')[0];
+                popup_d8f3c82689ca436997a65de0c357e4d2.setContent(i_frame_f53df998ca164419aff68e55681344b5);
+            
+
+            circle_marker_31d247a9a93841f8bcab378d011dc991.bindPopup(popup_d8f3c82689ca436997a65de0c357e4d2);
+
+            
+        
+    
+
+            var circle_marker_88a08faed0034fa3ae15e50483e6d716 = L.circleMarker(
+                [40.148,-121.068],
+                {
+                    color: '#83fcd6',
+                    weight: 2,
+                    fillColor: '#83fcd6',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5.6)
+                .addTo(feature_group_2db2435d98374ca8a3d757381b09c040);
+            
+    
+            var popup_15a75bbca9254a819355b149826d98c3 = L.popup({maxWidth: '300'});
+
+            
+                var i_frame_d32348df051e4db49971b9861fd639dc = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIG5hbWU6IE1hcnJ5PGJyPgogICAgbnVtMTogNTY8YnI+CiAgICBudW0yOiA5OTxicj4KICAgIG51bTM6IDY3PGJyPgogICAgY2F0ZWdvcnk6IEMxPGJyPgogICAgICAgIA==" width="150" style="border:none !important;" height="100"></iframe>')[0];
+                popup_15a75bbca9254a819355b149826d98c3.setContent(i_frame_d32348df051e4db49971b9861fd639dc);
+            
+
+            circle_marker_88a08faed0034fa3ae15e50483e6d716.bindPopup(popup_15a75bbca9254a819355b149826d98c3);
+
+            
+        
+    
+
+            var circle_marker_639503014c864cc294241d5fdcb9210c = L.circleMarker(
+                [18.185,-67.355],
+                {
+                    color: '#d36945',
+                    weight: 2,
+                    fillColor: '#d36945',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(6.6)
+                .addTo(feature_group_2db2435d98374ca8a3d757381b09c040);
+            
+    
+            var popup_c0b0136da9a1464d80909807058bece6 = L.popup({maxWidth: '300'});
+
+            
+                var i_frame_357b6cc3aac24440b843b61d3ebcf1dd = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIG5hbWU6IEFteTxicj4KICAgIG51bTE6IDY2PGJyPgogICAgbnVtMjogMjI8YnI+CiAgICBudW0zOiA1ODxicj4KICAgIGNhdGVnb3J5OiBDMjxicj4KICAgICAgICA=" width="150" style="border:none !important;" height="100"></iframe>')[0];
+                popup_c0b0136da9a1464d80909807058bece6.setContent(i_frame_357b6cc3aac24440b843b61d3ebcf1dd);
+            
+
+            circle_marker_639503014c864cc294241d5fdcb9210c.bindPopup(popup_c0b0136da9a1464d80909807058bece6);
+
+            
+        
+    
+
+            var circle_marker_ad45e26ef04540df9fc5816a6420960a = L.circleMarker(
+                [56.139,-160.718],
+                {
+                    color: '#72bc23',
+                    weight: 2,
+                    fillColor: '#72bc23',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5.4)
+                .addTo(feature_group_2db2435d98374ca8a3d757381b09c040);
+            
+    
+            var popup_c5348eeb3fb14a87b361915d4e8d1e8b = L.popup({maxWidth: '300'});
+
+            
+                var i_frame_25cbbcf4af344317b63522367bcbf89b = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIG5hbWU6IExpbmc8YnI+CiAgICBudW0xOiA1NDxicj4KICAgIG51bTI6IDY2PGJyPgogICAgbnVtMzogNDc8YnI+CiAgICBjYXRlZ29yeTogQzM8YnI+CiAgICAgICAg" width="150" style="border:none !important;" height="100"></iframe>')[0];
+                popup_c5348eeb3fb14a87b361915d4e8d1e8b.setContent(i_frame_25cbbcf4af344317b63522367bcbf89b);
+            
+
+            circle_marker_ad45e26ef04540df9fc5816a6420960a.bindPopup(popup_c5348eeb3fb14a87b361915d4e8d1e8b);
+
+            
+        
+    
+
+            var circle_marker_1f2c2121138949a1b406af409398d371 = L.circleMarker(
+                [62.172,-148.162],
+                {
+                    color: '#83fcd6',
+                    weight: 2,
+                    fillColor: '#83fcd6',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5.9)
+                .addTo(feature_group_2db2435d98374ca8a3d757381b09c040);
+            
+    
+            var popup_4aff574f56a948d59a8b66f960c23a3a = L.popup({maxWidth: '300'});
+
+            
+                var i_frame_c88a52a4ee704dafb073eebcf15d9ded = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIG5hbWU6IEh1aTxicj4KICAgIG51bTE6IDU5PGJyPgogICAgbnVtMjogMjI8YnI+CiAgICBudW0zOiA1Njxicj4KICAgIGNhdGVnb3J5OiBDMTxicj4KICAgICAgICA=" width="150" style="border:none !important;" height="100"></iframe>')[0];
+                popup_4aff574f56a948d59a8b66f960c23a3a.setContent(i_frame_c88a52a4ee704dafb073eebcf15d9ded);
+            
+
+            circle_marker_1f2c2121138949a1b406af409398d371.bindPopup(popup_4aff574f56a948d59a8b66f960c23a3a);
+
+            
+        
+    
+
+            var circle_marker_885211682f5c4b8290f95f2256139b8e = L.circleMarker(
+                [-43.36,172.945],
+                {
+                    color: '#d36945',
+                    weight: 2,
+                    fillColor: '#d36945',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(6.0)
+                .addTo(feature_group_2db2435d98374ca8a3d757381b09c040);
+            
+    
+            var popup_c985718016eb4757a9ace0c7f9a3d6e7 = L.popup({maxWidth: '300'});
+
+            
+                var i_frame_91866dde55c24b72a848c599ca9ab673 = $('<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIG5hbWU6IFFpPGJyPgogICAgbnVtMTogNjA8YnI+CiAgICBudW0yOiA3Nzxicj4KICAgIG51bTM6IDMzPGJyPgogICAgY2F0ZWdvcnk6IEMyPGJyPgogICAgICAgIA==" width="150" style="border:none !important;" height="100"></iframe>')[0];
+                popup_c985718016eb4757a9ace0c7f9a3d6e7.setContent(i_frame_91866dde55c24b72a848c599ca9ab673);
+            
+
+            circle_marker_885211682f5c4b8290f95f2256139b8e.bindPopup(popup_c985718016eb4757a9ace0c7f9a3d6e7);
+
+            
+        
+    
+            var feature_group_044115d5e7d14ec8b687f4251b95d2c2 = L.featureGroup(
+                ).addTo(map_9f091e85aea34e37abd7981e2927ac75);
+        
+    
+            var regular_polygon_marker_049e9c8c576c4219be7cc37ced389ea3 = new L.RegularPolygonMarker(
+                new L.LatLng(37.175,-113.408),
+                {
+                    icon : new L.Icon.Default(),
+                    color: '#83fcd6',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#83fcd6',
+                    fillOpacity: 1,
+                    numberOfSides: 3,
+                    rotation: 0,
+                    radius: 9.0
+                    }
+                )
+                .addTo(feature_group_044115d5e7d14ec8b687f4251b95d2c2);
+            
+    function vega_parse(spec, div) {
+            vg.parse.spec(spec, function(chart) { chart({el:div}).update(); });}
+    
+            var popup_332dbd5098624663ac720f7597429a4b = L.popup({maxWidth: '800'});
+
+            
+                var vega_f61ac59987b54f73a36f866a78042aa5 = $('             <div id="vega_f61ac59987b54f73a36f866a78042aa5"></div>             ')[0];
+                popup_332dbd5098624663ac720f7597429a4b.setContent(vega_f61ac59987b54f73a36f866a78042aa5);
+            
+
+            regular_polygon_marker_049e9c8c576c4219be7cc37ced389ea3.bindPopup(popup_332dbd5098624663ac720f7597429a4b);
+
+            
+                
+            vega_parse({"height": 200, "legends": [{"fill": "color", "offset": 0, "title": "Numeric data", "properties": {}}], "padding": "auto", "width": 350, "axes": [{"type": "x", "scale": "x", "title": "Categories"}, {"type": "y", "scale": "y", "title": "Sum of the NUM1"}], "scales": [{"name": "x", "type": "ordinal", "domain": {"field": "data.idx", "data": "table"}, "range": "width", "padding": 0.2}, {"name": "y", "domain": {"field": "data.val", "data": "table"}, "nice": true, "range": "height"}, {"name": "color", "type": "ordinal", "domain": {"field": "data.col", "data": "table"}, "range": ["#fbb4ae", "#b3cde3", "#ccebc5", "#decbe4", "#fed9a6", "#ffffcc", "#e5d8bd", "#fddaec", "#f2f2f2"]}], "data": [{"name": "table", "values": [{"col": "QUANT1", "val": 325, "idx": "C1"}, {"col": "QUANT2", "val": 354, "idx": "C1"}, {"col": "QUANT3", "val": 354, "idx": "C1"}, {"col": "QUANT1", "val": 235, "idx": "C2"}, {"col": "QUANT2", "val": 242, "idx": "C2"}, {"col": "QUANT3", "val": 204, "idx": "C2"}, {"col": "QUANT1", "val": 189, "idx": "C3"}, {"col": "QUANT2", "val": 231, "idx": "C3"}, {"col": "QUANT3", "val": 260, "idx": "C3"}]}], "marks": [{"type": "group", "from": {"transform": [{"type": "facet", "keys": ["data.idx"]}], "data": "table"}, "scales": [{"name": "pos", "type": "ordinal", "domain": {"field": "data.col"}, "range": "width"}], "marks": [{"type": "rect", "properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "scale": "pos", "offset": -1}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}}]},vega_f61ac59987b54f73a36f866a78042aa5);
+            
+            
+        
+    
+            var regular_polygon_marker_a30bfb99cef041c68e3ee6dd4ccd6efe = new L.RegularPolygonMarker(
+                new L.LatLng(37.178,-113.411),
+                {
+                    icon : new L.Icon.Default(),
+                    color: '#d36945',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#d36945',
+                    fillOpacity: 1,
+                    numberOfSides: 3,
+                    rotation: 0,
+                    radius: 6.6
+                    }
+                )
+                .addTo(feature_group_044115d5e7d14ec8b687f4251b95d2c2);
+            
+    
+            var popup_25ef7ceccdc14b80a8e89e35319b0df8 = L.popup({maxWidth: '800'});
+
+            
+                var vega_fcb955124eb040cf8eff4b4d883b442f = $('             <div id="vega_fcb955124eb040cf8eff4b4d883b442f"></div>             ')[0];
+                popup_25ef7ceccdc14b80a8e89e35319b0df8.setContent(vega_fcb955124eb040cf8eff4b4d883b442f);
+            
+
+            regular_polygon_marker_a30bfb99cef041c68e3ee6dd4ccd6efe.bindPopup(popup_25ef7ceccdc14b80a8e89e35319b0df8);
+
+            
+                
+            vega_parse({"height": 200, "legends": [{"fill": "color", "offset": 0, "title": "Numeric data", "properties": {}}], "padding": "auto", "width": 350, "axes": [{"type": "x", "scale": "x", "title": "Categories"}, {"type": "y", "scale": "y", "title": "Sum of the NUM1"}], "scales": [{"name": "x", "type": "ordinal", "domain": {"field": "data.idx", "data": "table"}, "range": "width", "padding": 0.2}, {"name": "y", "domain": {"field": "data.val", "data": "table"}, "nice": true, "range": "height"}, {"name": "color", "type": "ordinal", "domain": {"field": "data.col", "data": "table"}, "range": ["#fbb4ae", "#b3cde3", "#ccebc5", "#decbe4", "#fed9a6", "#ffffcc", "#e5d8bd", "#fddaec", "#f2f2f2"]}], "data": [{"name": "table", "values": [{"col": "QUANT1", "val": 325, "idx": "C1"}, {"col": "QUANT2", "val": 354, "idx": "C1"}, {"col": "QUANT3", "val": 354, "idx": "C1"}, {"col": "QUANT1", "val": 235, "idx": "C2"}, {"col": "QUANT2", "val": 242, "idx": "C2"}, {"col": "QUANT3", "val": 204, "idx": "C2"}, {"col": "QUANT1", "val": 189, "idx": "C3"}, {"col": "QUANT2", "val": 231, "idx": "C3"}, {"col": "QUANT3", "val": 260, "idx": "C3"}]}], "marks": [{"type": "group", "from": {"transform": [{"type": "facet", "keys": ["data.idx"]}], "data": "table"}, "scales": [{"name": "pos", "type": "ordinal", "domain": {"field": "data.col"}, "range": "width"}], "marks": [{"type": "rect", "properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "scale": "pos", "offset": -1}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}}]},vega_fcb955124eb040cf8eff4b4d883b442f);
+            
+            
+        
+    
+            var regular_polygon_marker_15125c32c61a462fa444b1b0136ea2a3 = new L.RegularPolygonMarker(
+                new L.LatLng(37.172,-113.413),
+                {
+                    icon : new L.Icon.Default(),
+                    color: '#72bc23',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#72bc23',
+                    fillOpacity: 1,
+                    numberOfSides: 3,
+                    rotation: 0,
+                    radius: 7.7
+                    }
+                )
+                .addTo(feature_group_044115d5e7d14ec8b687f4251b95d2c2);
+            
+    
+            var popup_1f550f0f187d403d8e1e9e298c0dc03a = L.popup({maxWidth: '800'});
+
+            
+                var vega_c7af3fe4fb42495d95912800e3537532 = $('             <div id="vega_c7af3fe4fb42495d95912800e3537532"></div>             ')[0];
+                popup_1f550f0f187d403d8e1e9e298c0dc03a.setContent(vega_c7af3fe4fb42495d95912800e3537532);
+            
+
+            regular_polygon_marker_15125c32c61a462fa444b1b0136ea2a3.bindPopup(popup_1f550f0f187d403d8e1e9e298c0dc03a);
+
+            
+                
+            vega_parse({"height": 200, "legends": [{"fill": "color", "offset": 0, "title": "Numeric data", "properties": {}}], "padding": "auto", "width": 350, "axes": [{"type": "x", "scale": "x", "title": "Categories"}, {"type": "y", "scale": "y", "title": "Sum of the NUM1"}], "scales": [{"name": "x", "type": "ordinal", "domain": {"field": "data.idx", "data": "table"}, "range": "width", "padding": 0.2}, {"name": "y", "domain": {"field": "data.val", "data": "table"}, "nice": true, "range": "height"}, {"name": "color", "type": "ordinal", "domain": {"field": "data.col", "data": "table"}, "range": ["#fbb4ae", "#b3cde3", "#ccebc5", "#decbe4", "#fed9a6", "#ffffcc", "#e5d8bd", "#fddaec", "#f2f2f2"]}], "data": [{"name": "table", "values": [{"col": "QUANT1", "val": 325, "idx": "C1"}, {"col": "QUANT2", "val": 354, "idx": "C1"}, {"col": "QUANT3", "val": 354, "idx": "C1"}, {"col": "QUANT1", "val": 235, "idx": "C2"}, {"col": "QUANT2", "val": 242, "idx": "C2"}, {"col": "QUANT3", "val": 204, "idx": "C2"}, {"col": "QUANT1", "val": 189, "idx": "C3"}, {"col": "QUANT2", "val": 231, "idx": "C3"}, {"col": "QUANT3", "val": 260, "idx": "C3"}]}], "marks": [{"type": "group", "from": {"transform": [{"type": "facet", "keys": ["data.idx"]}], "data": "table"}, "scales": [{"name": "pos", "type": "ordinal", "domain": {"field": "data.col"}, "range": "width"}], "marks": [{"type": "rect", "properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "scale": "pos", "offset": -1}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}}]},vega_c7af3fe4fb42495d95912800e3537532);
+            
+            
+        
+    
+            var regular_polygon_marker_b427ad8e1cf64fe8b919f9ff4cb8f5a7 = new L.RegularPolygonMarker(
+                new L.LatLng(37.174,-113.414),
+                {
+                    icon : new L.Icon.Default(),
+                    color: '#83fcd6',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#83fcd6',
+                    fillOpacity: 1,
+                    numberOfSides: 3,
+                    rotation: 0,
+                    radius: 8.8
+                    }
+                )
+                .addTo(feature_group_044115d5e7d14ec8b687f4251b95d2c2);
+            
+    
+            var popup_ecc37a14c16e48c58e8bb19fbb7e113c = L.popup({maxWidth: '800'});
+
+            
+                var vega_d47c0e42fd444eff9f4c8f3b670ce7b6 = $('             <div id="vega_d47c0e42fd444eff9f4c8f3b670ce7b6"></div>             ')[0];
+                popup_ecc37a14c16e48c58e8bb19fbb7e113c.setContent(vega_d47c0e42fd444eff9f4c8f3b670ce7b6);
+            
+
+            regular_polygon_marker_b427ad8e1cf64fe8b919f9ff4cb8f5a7.bindPopup(popup_ecc37a14c16e48c58e8bb19fbb7e113c);
+
+            
+                
+            vega_parse({"height": 200, "legends": [{"fill": "color", "offset": 0, "title": "Numeric data", "properties": {}}], "padding": "auto", "width": 350, "axes": [{"type": "x", "scale": "x", "title": "Categories"}, {"type": "y", "scale": "y", "title": "Sum of the NUM1"}], "scales": [{"name": "x", "type": "ordinal", "domain": {"field": "data.idx", "data": "table"}, "range": "width", "padding": 0.2}, {"name": "y", "domain": {"field": "data.val", "data": "table"}, "nice": true, "range": "height"}, {"name": "color", "type": "ordinal", "domain": {"field": "data.col", "data": "table"}, "range": ["#fbb4ae", "#b3cde3", "#ccebc5", "#decbe4", "#fed9a6", "#ffffcc", "#e5d8bd", "#fddaec", "#f2f2f2"]}], "data": [{"name": "table", "values": [{"col": "QUANT1", "val": 325, "idx": "C1"}, {"col": "QUANT2", "val": 354, "idx": "C1"}, {"col": "QUANT3", "val": 354, "idx": "C1"}, {"col": "QUANT1", "val": 235, "idx": "C2"}, {"col": "QUANT2", "val": 242, "idx": "C2"}, {"col": "QUANT3", "val": 204, "idx": "C2"}, {"col": "QUANT1", "val": 189, "idx": "C3"}, {"col": "QUANT2", "val": 231, "idx": "C3"}, {"col": "QUANT3", "val": 260, "idx": "C3"}]}], "marks": [{"type": "group", "from": {"transform": [{"type": "facet", "keys": ["data.idx"]}], "data": "table"}, "scales": [{"name": "pos", "type": "ordinal", "domain": {"field": "data.col"}, "range": "width"}], "marks": [{"type": "rect", "properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "scale": "pos", "offset": -1}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}}]},vega_d47c0e42fd444eff9f4c8f3b670ce7b6);
+            
+            
+        
+    
+            var regular_polygon_marker_227af50faaa5454490d504a66a561a29 = new L.RegularPolygonMarker(
+                new L.LatLng(51.127,-178.08),
+                {
+                    icon : new L.Icon.Default(),
+                    color: '#72bc23',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#72bc23',
+                    fillOpacity: 1,
+                    numberOfSides: 3,
+                    rotation: 0,
+                    radius: 5.5
+                    }
+                )
+                .addTo(feature_group_044115d5e7d14ec8b687f4251b95d2c2);
+            
+    
+            var popup_8acd1155935e42bd9ca3f92ef56c3264 = L.popup({maxWidth: '800'});
+
+            
+                var vega_36f233a9abb54106a389c06012d0c11e = $('             <div id="vega_36f233a9abb54106a389c06012d0c11e"></div>             ')[0];
+                popup_8acd1155935e42bd9ca3f92ef56c3264.setContent(vega_36f233a9abb54106a389c06012d0c11e);
+            
+
+            regular_polygon_marker_227af50faaa5454490d504a66a561a29.bindPopup(popup_8acd1155935e42bd9ca3f92ef56c3264);
+
+            
+                
+            vega_parse({"height": 200, "legends": [{"fill": "color", "offset": 0, "title": "Numeric data", "properties": {}}], "padding": "auto", "width": 350, "axes": [{"type": "x", "scale": "x", "title": "Categories"}, {"type": "y", "scale": "y", "title": "Sum of the NUM1"}], "scales": [{"name": "x", "type": "ordinal", "domain": {"field": "data.idx", "data": "table"}, "range": "width", "padding": 0.2}, {"name": "y", "domain": {"field": "data.val", "data": "table"}, "nice": true, "range": "height"}, {"name": "color", "type": "ordinal", "domain": {"field": "data.col", "data": "table"}, "range": ["#fbb4ae", "#b3cde3", "#ccebc5", "#decbe4", "#fed9a6", "#ffffcc", "#e5d8bd", "#fddaec", "#f2f2f2"]}], "data": [{"name": "table", "values": [{"col": "QUANT1", "val": 325, "idx": "C1"}, {"col": "QUANT2", "val": 354, "idx": "C1"}, {"col": "QUANT3", "val": 354, "idx": "C1"}, {"col": "QUANT1", "val": 235, "idx": "C2"}, {"col": "QUANT2", "val": 242, "idx": "C2"}, {"col": "QUANT3", "val": 204, "idx": "C2"}, {"col": "QUANT1", "val": 189, "idx": "C3"}, {"col": "QUANT2", "val": 231, "idx": "C3"}, {"col": "QUANT3", "val": 260, "idx": "C3"}]}], "marks": [{"type": "group", "from": {"transform": [{"type": "facet", "keys": ["data.idx"]}], "data": "table"}, "scales": [{"name": "pos", "type": "ordinal", "domain": {"field": "data.col"}, "range": "width"}], "marks": [{"type": "rect", "properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "scale": "pos", "offset": -1}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}}]},vega_36f233a9abb54106a389c06012d0c11e);
+            
+            
+        
+    
+            var regular_polygon_marker_9b58a9d7ce6c4a6d9a1594a7af26dbbe = new L.RegularPolygonMarker(
+                new L.LatLng(21.648,143.032),
+                {
+                    icon : new L.Icon.Default(),
+                    color: '#d36945',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#d36945',
+                    fillOpacity: 1,
+                    numberOfSides: 3,
+                    rotation: 0,
+                    radius: 7.7
+                    }
+                )
+                .addTo(feature_group_044115d5e7d14ec8b687f4251b95d2c2);
+            
+    
+            var popup_554f01f48e58449fb1e804fc5290c317 = L.popup({maxWidth: '800'});
+
+            
+                var vega_5428203e77cf47ee953a7923b1a9b64c = $('             <div id="vega_5428203e77cf47ee953a7923b1a9b64c"></div>             ')[0];
+                popup_554f01f48e58449fb1e804fc5290c317.setContent(vega_5428203e77cf47ee953a7923b1a9b64c);
+            
+
+            regular_polygon_marker_9b58a9d7ce6c4a6d9a1594a7af26dbbe.bindPopup(popup_554f01f48e58449fb1e804fc5290c317);
+
+            
+                
+            vega_parse({"height": 200, "legends": [{"fill": "color", "offset": 0, "title": "Numeric data", "properties": {}}], "padding": "auto", "width": 350, "axes": [{"type": "x", "scale": "x", "title": "Categories"}, {"type": "y", "scale": "y", "title": "Sum of the NUM1"}], "scales": [{"name": "x", "type": "ordinal", "domain": {"field": "data.idx", "data": "table"}, "range": "width", "padding": 0.2}, {"name": "y", "domain": {"field": "data.val", "data": "table"}, "nice": true, "range": "height"}, {"name": "color", "type": "ordinal", "domain": {"field": "data.col", "data": "table"}, "range": ["#fbb4ae", "#b3cde3", "#ccebc5", "#decbe4", "#fed9a6", "#ffffcc", "#e5d8bd", "#fddaec", "#f2f2f2"]}], "data": [{"name": "table", "values": [{"col": "QUANT1", "val": 325, "idx": "C1"}, {"col": "QUANT2", "val": 354, "idx": "C1"}, {"col": "QUANT3", "val": 354, "idx": "C1"}, {"col": "QUANT1", "val": 235, "idx": "C2"}, {"col": "QUANT2", "val": 242, "idx": "C2"}, {"col": "QUANT3", "val": 204, "idx": "C2"}, {"col": "QUANT1", "val": 189, "idx": "C3"}, {"col": "QUANT2", "val": 231, "idx": "C3"}, {"col": "QUANT3", "val": 260, "idx": "C3"}]}], "marks": [{"type": "group", "from": {"transform": [{"type": "facet", "keys": ["data.idx"]}], "data": "table"}, "scales": [{"name": "pos", "type": "ordinal", "domain": {"field": "data.col"}, "range": "width"}], "marks": [{"type": "rect", "properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "scale": "pos", "offset": -1}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}}]},vega_5428203e77cf47ee953a7923b1a9b64c);
+            
+            
+        
+    
+            var regular_polygon_marker_159c253fae8c441b842949ad537b44a3 = new L.RegularPolygonMarker(
+                new L.LatLng(19.103,-64.754),
+                {
+                    icon : new L.Icon.Default(),
+                    color: '#72bc23',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#72bc23',
+                    fillOpacity: 1,
+                    numberOfSides: 3,
+                    rotation: 0,
+                    radius: 3.3
+                    }
+                )
+                .addTo(feature_group_044115d5e7d14ec8b687f4251b95d2c2);
+            
+    
+            var popup_e1bc6aedf0e94ed490a38170259cd97e = L.popup({maxWidth: '800'});
+
+            
+                var vega_0276249b91e1454490a1050d5edaece6 = $('             <div id="vega_0276249b91e1454490a1050d5edaece6"></div>             ')[0];
+                popup_e1bc6aedf0e94ed490a38170259cd97e.setContent(vega_0276249b91e1454490a1050d5edaece6);
+            
+
+            regular_polygon_marker_159c253fae8c441b842949ad537b44a3.bindPopup(popup_e1bc6aedf0e94ed490a38170259cd97e);
+
+            
+                
+            vega_parse({"height": 200, "legends": [{"fill": "color", "offset": 0, "title": "Numeric data", "properties": {}}], "padding": "auto", "width": 350, "axes": [{"type": "x", "scale": "x", "title": "Categories"}, {"type": "y", "scale": "y", "title": "Sum of the NUM1"}], "scales": [{"name": "x", "type": "ordinal", "domain": {"field": "data.idx", "data": "table"}, "range": "width", "padding": 0.2}, {"name": "y", "domain": {"field": "data.val", "data": "table"}, "nice": true, "range": "height"}, {"name": "color", "type": "ordinal", "domain": {"field": "data.col", "data": "table"}, "range": ["#fbb4ae", "#b3cde3", "#ccebc5", "#decbe4", "#fed9a6", "#ffffcc", "#e5d8bd", "#fddaec", "#f2f2f2"]}], "data": [{"name": "table", "values": [{"col": "QUANT1", "val": 325, "idx": "C1"}, {"col": "QUANT2", "val": 354, "idx": "C1"}, {"col": "QUANT3", "val": 354, "idx": "C1"}, {"col": "QUANT1", "val": 235, "idx": "C2"}, {"col": "QUANT2", "val": 242, "idx": "C2"}, {"col": "QUANT3", "val": 204, "idx": "C2"}, {"col": "QUANT1", "val": 189, "idx": "C3"}, {"col": "QUANT2", "val": 231, "idx": "C3"}, {"col": "QUANT3", "val": 260, "idx": "C3"}]}], "marks": [{"type": "group", "from": {"transform": [{"type": "facet", "keys": ["data.idx"]}], "data": "table"}, "scales": [{"name": "pos", "type": "ordinal", "domain": {"field": "data.col"}, "range": "width"}], "marks": [{"type": "rect", "properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "scale": "pos", "offset": -1}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}}]},vega_0276249b91e1454490a1050d5edaece6);
+            
+            
+        
+    
+            var regular_polygon_marker_27f25623a7d94229847001dbef040b32 = new L.RegularPolygonMarker(
+                new L.LatLng(-10.28,161.56),
+                {
+                    icon : new L.Icon.Default(),
+                    color: '#83fcd6',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#83fcd6',
+                    fillOpacity: 1,
+                    numberOfSides: 3,
+                    rotation: 0,
+                    radius: 5.5
+                    }
+                )
+                .addTo(feature_group_044115d5e7d14ec8b687f4251b95d2c2);
+            
+    
+            var popup_0b028c17c0fb4d2bb28a36ca058a2fc3 = L.popup({maxWidth: '800'});
+
+            
+                var vega_cead4744a75043a4bd0a452cfac357c0 = $('             <div id="vega_cead4744a75043a4bd0a452cfac357c0"></div>             ')[0];
+                popup_0b028c17c0fb4d2bb28a36ca058a2fc3.setContent(vega_cead4744a75043a4bd0a452cfac357c0);
+            
+
+            regular_polygon_marker_27f25623a7d94229847001dbef040b32.bindPopup(popup_0b028c17c0fb4d2bb28a36ca058a2fc3);
+
+            
+                
+            vega_parse({"height": 200, "legends": [{"fill": "color", "offset": 0, "title": "Numeric data", "properties": {}}], "padding": "auto", "width": 350, "axes": [{"type": "x", "scale": "x", "title": "Categories"}, {"type": "y", "scale": "y", "title": "Sum of the NUM1"}], "scales": [{"name": "x", "type": "ordinal", "domain": {"field": "data.idx", "data": "table"}, "range": "width", "padding": 0.2}, {"name": "y", "domain": {"field": "data.val", "data": "table"}, "nice": true, "range": "height"}, {"name": "color", "type": "ordinal", "domain": {"field": "data.col", "data": "table"}, "range": ["#fbb4ae", "#b3cde3", "#ccebc5", "#decbe4", "#fed9a6", "#ffffcc", "#e5d8bd", "#fddaec", "#f2f2f2"]}], "data": [{"name": "table", "values": [{"col": "QUANT1", "val": 325, "idx": "C1"}, {"col": "QUANT2", "val": 354, "idx": "C1"}, {"col": "QUANT3", "val": 354, "idx": "C1"}, {"col": "QUANT1", "val": 235, "idx": "C2"}, {"col": "QUANT2", "val": 242, "idx": "C2"}, {"col": "QUANT3", "val": 204, "idx": "C2"}, {"col": "QUANT1", "val": 189, "idx": "C3"}, {"col": "QUANT2", "val": 231, "idx": "C3"}, {"col": "QUANT3", "val": 260, "idx": "C3"}]}], "marks": [{"type": "group", "from": {"transform": [{"type": "facet", "keys": ["data.idx"]}], "data": "table"}, "scales": [{"name": "pos", "type": "ordinal", "domain": {"field": "data.col"}, "range": "width"}], "marks": [{"type": "rect", "properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "scale": "pos", "offset": -1}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}}]},vega_cead4744a75043a4bd0a452cfac357c0);
+            
+            
+        
+    
+            var regular_polygon_marker_3ea57a7bc4304b618615037e8825ee92 = new L.RegularPolygonMarker(
+                new L.LatLng(40.148,-121.068),
+                {
+                    icon : new L.Icon.Default(),
+                    color: '#83fcd6',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#83fcd6',
+                    fillOpacity: 1,
+                    numberOfSides: 3,
+                    rotation: 0,
+                    radius: 9.9
+                    }
+                )
+                .addTo(feature_group_044115d5e7d14ec8b687f4251b95d2c2);
+            
+    
+            var popup_2eba6e6d3cb54de6944464f998e5ae93 = L.popup({maxWidth: '800'});
+
+            
+                var vega_dd39208b524d430092b825bbc3641dca = $('             <div id="vega_dd39208b524d430092b825bbc3641dca"></div>             ')[0];
+                popup_2eba6e6d3cb54de6944464f998e5ae93.setContent(vega_dd39208b524d430092b825bbc3641dca);
+            
+
+            regular_polygon_marker_3ea57a7bc4304b618615037e8825ee92.bindPopup(popup_2eba6e6d3cb54de6944464f998e5ae93);
+
+            
+                
+            vega_parse({"height": 200, "legends": [{"fill": "color", "offset": 0, "title": "Numeric data", "properties": {}}], "padding": "auto", "width": 350, "axes": [{"type": "x", "scale": "x", "title": "Categories"}, {"type": "y", "scale": "y", "title": "Sum of the NUM1"}], "scales": [{"name": "x", "type": "ordinal", "domain": {"field": "data.idx", "data": "table"}, "range": "width", "padding": 0.2}, {"name": "y", "domain": {"field": "data.val", "data": "table"}, "nice": true, "range": "height"}, {"name": "color", "type": "ordinal", "domain": {"field": "data.col", "data": "table"}, "range": ["#fbb4ae", "#b3cde3", "#ccebc5", "#decbe4", "#fed9a6", "#ffffcc", "#e5d8bd", "#fddaec", "#f2f2f2"]}], "data": [{"name": "table", "values": [{"col": "QUANT1", "val": 325, "idx": "C1"}, {"col": "QUANT2", "val": 354, "idx": "C1"}, {"col": "QUANT3", "val": 354, "idx": "C1"}, {"col": "QUANT1", "val": 235, "idx": "C2"}, {"col": "QUANT2", "val": 242, "idx": "C2"}, {"col": "QUANT3", "val": 204, "idx": "C2"}, {"col": "QUANT1", "val": 189, "idx": "C3"}, {"col": "QUANT2", "val": 231, "idx": "C3"}, {"col": "QUANT3", "val": 260, "idx": "C3"}]}], "marks": [{"type": "group", "from": {"transform": [{"type": "facet", "keys": ["data.idx"]}], "data": "table"}, "scales": [{"name": "pos", "type": "ordinal", "domain": {"field": "data.col"}, "range": "width"}], "marks": [{"type": "rect", "properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "scale": "pos", "offset": -1}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}}]},vega_dd39208b524d430092b825bbc3641dca);
+            
+            
+        
+    
+            var regular_polygon_marker_f6ac65f0d921431d8b695848e41b7e6f = new L.RegularPolygonMarker(
+                new L.LatLng(18.185,-67.355),
+                {
+                    icon : new L.Icon.Default(),
+                    color: '#d36945',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#d36945',
+                    fillOpacity: 1,
+                    numberOfSides: 3,
+                    rotation: 0,
+                    radius: 2.2
+                    }
+                )
+                .addTo(feature_group_044115d5e7d14ec8b687f4251b95d2c2);
+            
+    
+            var popup_9f7ff5f6af9a425db0c2a25c4c375336 = L.popup({maxWidth: '800'});
+
+            
+                var vega_0c984b45b27c4a8991e23d15a6ce97fa = $('             <div id="vega_0c984b45b27c4a8991e23d15a6ce97fa"></div>             ')[0];
+                popup_9f7ff5f6af9a425db0c2a25c4c375336.setContent(vega_0c984b45b27c4a8991e23d15a6ce97fa);
+            
+
+            regular_polygon_marker_f6ac65f0d921431d8b695848e41b7e6f.bindPopup(popup_9f7ff5f6af9a425db0c2a25c4c375336);
+
+            
+                
+            vega_parse({"height": 200, "legends": [{"fill": "color", "offset": 0, "title": "Numeric data", "properties": {}}], "padding": "auto", "width": 350, "axes": [{"type": "x", "scale": "x", "title": "Categories"}, {"type": "y", "scale": "y", "title": "Sum of the NUM1"}], "scales": [{"name": "x", "type": "ordinal", "domain": {"field": "data.idx", "data": "table"}, "range": "width", "padding": 0.2}, {"name": "y", "domain": {"field": "data.val", "data": "table"}, "nice": true, "range": "height"}, {"name": "color", "type": "ordinal", "domain": {"field": "data.col", "data": "table"}, "range": ["#fbb4ae", "#b3cde3", "#ccebc5", "#decbe4", "#fed9a6", "#ffffcc", "#e5d8bd", "#fddaec", "#f2f2f2"]}], "data": [{"name": "table", "values": [{"col": "QUANT1", "val": 325, "idx": "C1"}, {"col": "QUANT2", "val": 354, "idx": "C1"}, {"col": "QUANT3", "val": 354, "idx": "C1"}, {"col": "QUANT1", "val": 235, "idx": "C2"}, {"col": "QUANT2", "val": 242, "idx": "C2"}, {"col": "QUANT3", "val": 204, "idx": "C2"}, {"col": "QUANT1", "val": 189, "idx": "C3"}, {"col": "QUANT2", "val": 231, "idx": "C3"}, {"col": "QUANT3", "val": 260, "idx": "C3"}]}], "marks": [{"type": "group", "from": {"transform": [{"type": "facet", "keys": ["data.idx"]}], "data": "table"}, "scales": [{"name": "pos", "type": "ordinal", "domain": {"field": "data.col"}, "range": "width"}], "marks": [{"type": "rect", "properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "scale": "pos", "offset": -1}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}}]},vega_0c984b45b27c4a8991e23d15a6ce97fa);
+            
+            
+        
+    
+            var regular_polygon_marker_6e6edd3ff4874009bef86697e5a18874 = new L.RegularPolygonMarker(
+                new L.LatLng(56.139,-160.718),
+                {
+                    icon : new L.Icon.Default(),
+                    color: '#72bc23',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#72bc23',
+                    fillOpacity: 1,
+                    numberOfSides: 3,
+                    rotation: 0,
+                    radius: 6.6
+                    }
+                )
+                .addTo(feature_group_044115d5e7d14ec8b687f4251b95d2c2);
+            
+    
+            var popup_0c51206f985d4e25918e6c63f85b9edb = L.popup({maxWidth: '800'});
+
+            
+                var vega_9f47a12f182949e9a35a12237233e354 = $('             <div id="vega_9f47a12f182949e9a35a12237233e354"></div>             ')[0];
+                popup_0c51206f985d4e25918e6c63f85b9edb.setContent(vega_9f47a12f182949e9a35a12237233e354);
+            
+
+            regular_polygon_marker_6e6edd3ff4874009bef86697e5a18874.bindPopup(popup_0c51206f985d4e25918e6c63f85b9edb);
+
+            
+                
+            vega_parse({"height": 200, "legends": [{"fill": "color", "offset": 0, "title": "Numeric data", "properties": {}}], "padding": "auto", "width": 350, "axes": [{"type": "x", "scale": "x", "title": "Categories"}, {"type": "y", "scale": "y", "title": "Sum of the NUM1"}], "scales": [{"name": "x", "type": "ordinal", "domain": {"field": "data.idx", "data": "table"}, "range": "width", "padding": 0.2}, {"name": "y", "domain": {"field": "data.val", "data": "table"}, "nice": true, "range": "height"}, {"name": "color", "type": "ordinal", "domain": {"field": "data.col", "data": "table"}, "range": ["#fbb4ae", "#b3cde3", "#ccebc5", "#decbe4", "#fed9a6", "#ffffcc", "#e5d8bd", "#fddaec", "#f2f2f2"]}], "data": [{"name": "table", "values": [{"col": "QUANT1", "val": 325, "idx": "C1"}, {"col": "QUANT2", "val": 354, "idx": "C1"}, {"col": "QUANT3", "val": 354, "idx": "C1"}, {"col": "QUANT1", "val": 235, "idx": "C2"}, {"col": "QUANT2", "val": 242, "idx": "C2"}, {"col": "QUANT3", "val": 204, "idx": "C2"}, {"col": "QUANT1", "val": 189, "idx": "C3"}, {"col": "QUANT2", "val": 231, "idx": "C3"}, {"col": "QUANT3", "val": 260, "idx": "C3"}]}], "marks": [{"type": "group", "from": {"transform": [{"type": "facet", "keys": ["data.idx"]}], "data": "table"}, "scales": [{"name": "pos", "type": "ordinal", "domain": {"field": "data.col"}, "range": "width"}], "marks": [{"type": "rect", "properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "scale": "pos", "offset": -1}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}}]},vega_9f47a12f182949e9a35a12237233e354);
+            
+            
+        
+    
+            var regular_polygon_marker_09f545fc0081458799b4e52ca2e21c19 = new L.RegularPolygonMarker(
+                new L.LatLng(62.172,-148.162),
+                {
+                    icon : new L.Icon.Default(),
+                    color: '#83fcd6',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#83fcd6',
+                    fillOpacity: 1,
+                    numberOfSides: 3,
+                    rotation: 0,
+                    radius: 2.2
+                    }
+                )
+                .addTo(feature_group_044115d5e7d14ec8b687f4251b95d2c2);
+            
+    
+            var popup_f0979502b76d40288fbc618bda3104fd = L.popup({maxWidth: '800'});
+
+            
+                var vega_1c6de2dff8f148bdb2e44eb7074f70ba = $('             <div id="vega_1c6de2dff8f148bdb2e44eb7074f70ba"></div>             ')[0];
+                popup_f0979502b76d40288fbc618bda3104fd.setContent(vega_1c6de2dff8f148bdb2e44eb7074f70ba);
+            
+
+            regular_polygon_marker_09f545fc0081458799b4e52ca2e21c19.bindPopup(popup_f0979502b76d40288fbc618bda3104fd);
+
+            
+                
+            vega_parse({"height": 200, "legends": [{"fill": "color", "offset": 0, "title": "Numeric data", "properties": {}}], "padding": "auto", "width": 350, "axes": [{"type": "x", "scale": "x", "title": "Categories"}, {"type": "y", "scale": "y", "title": "Sum of the NUM1"}], "scales": [{"name": "x", "type": "ordinal", "domain": {"field": "data.idx", "data": "table"}, "range": "width", "padding": 0.2}, {"name": "y", "domain": {"field": "data.val", "data": "table"}, "nice": true, "range": "height"}, {"name": "color", "type": "ordinal", "domain": {"field": "data.col", "data": "table"}, "range": ["#fbb4ae", "#b3cde3", "#ccebc5", "#decbe4", "#fed9a6", "#ffffcc", "#e5d8bd", "#fddaec", "#f2f2f2"]}], "data": [{"name": "table", "values": [{"col": "QUANT1", "val": 325, "idx": "C1"}, {"col": "QUANT2", "val": 354, "idx": "C1"}, {"col": "QUANT3", "val": 354, "idx": "C1"}, {"col": "QUANT1", "val": 235, "idx": "C2"}, {"col": "QUANT2", "val": 242, "idx": "C2"}, {"col": "QUANT3", "val": 204, "idx": "C2"}, {"col": "QUANT1", "val": 189, "idx": "C3"}, {"col": "QUANT2", "val": 231, "idx": "C3"}, {"col": "QUANT3", "val": 260, "idx": "C3"}]}], "marks": [{"type": "group", "from": {"transform": [{"type": "facet", "keys": ["data.idx"]}], "data": "table"}, "scales": [{"name": "pos", "type": "ordinal", "domain": {"field": "data.col"}, "range": "width"}], "marks": [{"type": "rect", "properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "scale": "pos", "offset": -1}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}}]},vega_1c6de2dff8f148bdb2e44eb7074f70ba);
+            
+            
+        
+    
+            var regular_polygon_marker_8758282f4cfa4789a317770dee020b43 = new L.RegularPolygonMarker(
+                new L.LatLng(-43.36,172.945),
+                {
+                    icon : new L.Icon.Default(),
+                    color: '#d36945',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#d36945',
+                    fillOpacity: 1,
+                    numberOfSides: 3,
+                    rotation: 0,
+                    radius: 7.7
+                    }
+                )
+                .addTo(feature_group_044115d5e7d14ec8b687f4251b95d2c2);
+            
+    
+            var popup_2ab61b34ecdf410ca2f3aa6492f4260c = L.popup({maxWidth: '800'});
+
+            
+                var vega_b7c46fab94814f15be43d3e0ea2135a8 = $('             <div id="vega_b7c46fab94814f15be43d3e0ea2135a8"></div>             ')[0];
+                popup_2ab61b34ecdf410ca2f3aa6492f4260c.setContent(vega_b7c46fab94814f15be43d3e0ea2135a8);
+            
+
+            regular_polygon_marker_8758282f4cfa4789a317770dee020b43.bindPopup(popup_2ab61b34ecdf410ca2f3aa6492f4260c);
+
+            
+                
+            vega_parse({"height": 200, "legends": [{"fill": "color", "offset": 0, "title": "Numeric data", "properties": {}}], "padding": "auto", "width": 350, "axes": [{"type": "x", "scale": "x", "title": "Categories"}, {"type": "y", "scale": "y", "title": "Sum of the NUM1"}], "scales": [{"name": "x", "type": "ordinal", "domain": {"field": "data.idx", "data": "table"}, "range": "width", "padding": 0.2}, {"name": "y", "domain": {"field": "data.val", "data": "table"}, "nice": true, "range": "height"}, {"name": "color", "type": "ordinal", "domain": {"field": "data.col", "data": "table"}, "range": ["#fbb4ae", "#b3cde3", "#ccebc5", "#decbe4", "#fed9a6", "#ffffcc", "#e5d8bd", "#fddaec", "#f2f2f2"]}], "data": [{"name": "table", "values": [{"col": "QUANT1", "val": 325, "idx": "C1"}, {"col": "QUANT2", "val": 354, "idx": "C1"}, {"col": "QUANT3", "val": 354, "idx": "C1"}, {"col": "QUANT1", "val": 235, "idx": "C2"}, {"col": "QUANT2", "val": 242, "idx": "C2"}, {"col": "QUANT3", "val": 204, "idx": "C2"}, {"col": "QUANT1", "val": 189, "idx": "C3"}, {"col": "QUANT2", "val": 231, "idx": "C3"}, {"col": "QUANT3", "val": 260, "idx": "C3"}]}], "marks": [{"type": "group", "from": {"transform": [{"type": "facet", "keys": ["data.idx"]}], "data": "table"}, "scales": [{"name": "pos", "type": "ordinal", "domain": {"field": "data.col"}, "range": "width"}], "marks": [{"type": "rect", "properties": {"enter": {"fill": {"field": "data.col", "scale": "color"}, "width": {"band": true, "scale": "pos", "offset": -1}, "x": {"field": "data.col", "scale": "pos"}, "y": {"field": "data.val", "scale": "y"}, "y2": {"scale": "y", "value": 0}}}}], "properties": {"enter": {"width": {"band": true, "scale": "x"}, "x": {"field": "key", "scale": "x"}}}}]},vega_b7c46fab94814f15be43d3e0ea2135a8);
+            
+            
+        
+    
+            var feature_group_6c22e942f68e4e5eb12bd3d8367209b2 = L.featureGroup(
+                ).addTo(map_9f091e85aea34e37abd7981e2927ac75);
+        
+    
+            var regular_polygon_marker_4132fef48eb945d58c47a9fd51ddc8ac = new L.RegularPolygonMarker(
+                new L.LatLng(37.175,-113.408),
+                {
+                    icon : new L.Icon.Default(),
+                    color: '#83fcd6',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#83fcd6',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 8.8
+                    }
+                )
+                .addTo(feature_group_6c22e942f68e4e5eb12bd3d8367209b2);
+            
+    
+            var popup_835d58909525405bb99abe757ded5675 = L.popup({maxWidth: '800'});
+
+            
+                var vega_2bb74583c6e64da19c5f39ff5ff1423e = $('             <div id="vega_2bb74583c6e64da19c5f39ff5ff1423e"></div>             ')[0];
+                popup_835d58909525405bb99abe757ded5675.setContent(vega_2bb74583c6e64da19c5f39ff5ff1423e);
+            
+
+            regular_polygon_marker_4132fef48eb945d58c47a9fd51ddc8ac.bindPopup(popup_835d58909525405bb99abe757ded5675);
+
+            
+                
+            vega_parse({"height": 200, "legends": [{"fill": "color", "offset": 0, "title": "Categories", "properties": {}}], "padding": "auto", "width": 350, "axes": [{"type": "x", "scale": "x", "title": "Datetime"}, {"type": "y", "scale": "y", "title": "Sum of the NUM2"}], "scales": [{"name": "x", "type": "ordinal", "domain": {"field": "data.idx", "data": "table"}, "range": "width"}, {"name": "y", "domain": {"field": "data.val", "data": "table"}, "nice": true, "range": "height"}, {"name": "color", "type": "ordinal", "domain": {"field": "data.col", "data": "table"}, "range": "category20"}], "data": [{"name": "table", "values": [{"col": "QUANT1", "val": 131, "idx": "2/11/13"}, {"col": "QUANT2", "val": 167, "idx": "2/11/13"}, {"col": "QUANT3", "val": 166, "idx": "2/11/13"}, {"col": "QUANT1", "val": 70, "idx": "2/12/13"}, {"col": "QUANT2", "val": 88, "idx": "2/12/13"}, {"col": "QUANT3", "val": 135, "idx": "2/12/13"}, {"col": "QUANT1", "val": 76, "idx": "2/13/13"}, {"col": "QUANT2", "val": 66, "idx": "2/13/13"}, {"col": "QUANT3", "val": 45, "idx": "2/13/13"}, {"col": "QUANT1", "val": 100, "idx": "2/14/13"}, {"col": "QUANT2", "val": 165, "idx": "2/14/13"}, {"col": "QUANT3", "val": 167, "idx": "2/14/13"}, {"col": "QUANT1", "val": 131, "idx": "2/15/13"}, {"col": "QUANT2", "val": 121, "idx": "2/15/13"}, {"col": "QUANT3", "val": 91, "idx": "2/15/13"}, {"col": "QUANT1", "val": 122, "idx": "2/16/13"}, {"col": "QUANT2", "val": 121, "idx": "2/16/13"}, {"col": "QUANT3", "val": 125, "idx": "2/16/13"}, {"col": "QUANT1", "val": 59, "idx": "2/17/13"}, {"col": "QUANT2", "val": 22, "idx": "2/17/13"}, {"col": "QUANT3", "val": 56, "idx": "2/17/13"}, {"col": "QUANT1", "val": 60, "idx": "2/18/13"}, {"col": "QUANT2", "val": 77, "idx": "2/18/13"}, {"col": "QUANT3", "val": 33, "idx": "2/18/13"}]}], "marks": [{"type": "group", "from": {"transform": [{"type": "facet", "keys": ["data.col"]}], "data": "table"}, "marks": [{"type": "line", "properties": {"enter": {"x": {"field": "data.idx", "scale": "x"}, "strokeWidth": {"value": 2}, "stroke": {"field": "data.col", "scale": "color"}, "y": {"field": "data.val", "scale": "y"}}}}]}]},vega_2bb74583c6e64da19c5f39ff5ff1423e);
+            
+            
+        
+    
+            var regular_polygon_marker_f9cecfbdb9fb4354a810a0c43ac615da = new L.RegularPolygonMarker(
+                new L.LatLng(37.178,-113.411),
+                {
+                    icon : new L.Icon.Default(),
+                    color: '#d36945',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#d36945',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 4.5
+                    }
+                )
+                .addTo(feature_group_6c22e942f68e4e5eb12bd3d8367209b2);
+            
+    
+            var popup_97ce677cb0614a118c3b8ef290affd64 = L.popup({maxWidth: '800'});
+
+            
+                var vega_eca6b145f7c64762abad2f4f9b62a5ce = $('             <div id="vega_eca6b145f7c64762abad2f4f9b62a5ce"></div>             ')[0];
+                popup_97ce677cb0614a118c3b8ef290affd64.setContent(vega_eca6b145f7c64762abad2f4f9b62a5ce);
+            
+
+            regular_polygon_marker_f9cecfbdb9fb4354a810a0c43ac615da.bindPopup(popup_97ce677cb0614a118c3b8ef290affd64);
+
+            
+                
+            vega_parse({"height": 200, "legends": [{"fill": "color", "offset": 0, "title": "Categories", "properties": {}}], "padding": "auto", "width": 350, "axes": [{"type": "x", "scale": "x", "title": "Datetime"}, {"type": "y", "scale": "y", "title": "Sum of the NUM2"}], "scales": [{"name": "x", "type": "ordinal", "domain": {"field": "data.idx", "data": "table"}, "range": "width"}, {"name": "y", "domain": {"field": "data.val", "data": "table"}, "nice": true, "range": "height"}, {"name": "color", "type": "ordinal", "domain": {"field": "data.col", "data": "table"}, "range": "category20"}], "data": [{"name": "table", "values": [{"col": "QUANT1", "val": 131, "idx": "2/11/13"}, {"col": "QUANT2", "val": 167, "idx": "2/11/13"}, {"col": "QUANT3", "val": 166, "idx": "2/11/13"}, {"col": "QUANT1", "val": 70, "idx": "2/12/13"}, {"col": "QUANT2", "val": 88, "idx": "2/12/13"}, {"col": "QUANT3", "val": 135, "idx": "2/12/13"}, {"col": "QUANT1", "val": 76, "idx": "2/13/13"}, {"col": "QUANT2", "val": 66, "idx": "2/13/13"}, {"col": "QUANT3", "val": 45, "idx": "2/13/13"}, {"col": "QUANT1", "val": 100, "idx": "2/14/13"}, {"col": "QUANT2", "val": 165, "idx": "2/14/13"}, {"col": "QUANT3", "val": 167, "idx": "2/14/13"}, {"col": "QUANT1", "val": 131, "idx": "2/15/13"}, {"col": "QUANT2", "val": 121, "idx": "2/15/13"}, {"col": "QUANT3", "val": 91, "idx": "2/15/13"}, {"col": "QUANT1", "val": 122, "idx": "2/16/13"}, {"col": "QUANT2", "val": 121, "idx": "2/16/13"}, {"col": "QUANT3", "val": 125, "idx": "2/16/13"}, {"col": "QUANT1", "val": 59, "idx": "2/17/13"}, {"col": "QUANT2", "val": 22, "idx": "2/17/13"}, {"col": "QUANT3", "val": 56, "idx": "2/17/13"}, {"col": "QUANT1", "val": 60, "idx": "2/18/13"}, {"col": "QUANT2", "val": 77, "idx": "2/18/13"}, {"col": "QUANT3", "val": 33, "idx": "2/18/13"}]}], "marks": [{"type": "group", "from": {"transform": [{"type": "facet", "keys": ["data.col"]}], "data": "table"}, "marks": [{"type": "line", "properties": {"enter": {"x": {"field": "data.idx", "scale": "x"}, "strokeWidth": {"value": 2}, "stroke": {"field": "data.col", "scale": "color"}, "y": {"field": "data.val", "scale": "y"}}}}]}]},vega_eca6b145f7c64762abad2f4f9b62a5ce);
+            
+            
+        
+    
+            var regular_polygon_marker_df2c891e94bc406dbd89d8ebf3cc0c5d = new L.RegularPolygonMarker(
+                new L.LatLng(37.172,-113.413),
+                {
+                    icon : new L.Icon.Default(),
+                    color: '#72bc23',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#72bc23',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 7.8
+                    }
+                )
+                .addTo(feature_group_6c22e942f68e4e5eb12bd3d8367209b2);
+            
+    
+            var popup_001077ba6beb4080854e18567e94282e = L.popup({maxWidth: '800'});
+
+            
+                var vega_f36aa477946a4c5a9c85a86b687d9ce8 = $('             <div id="vega_f36aa477946a4c5a9c85a86b687d9ce8"></div>             ')[0];
+                popup_001077ba6beb4080854e18567e94282e.setContent(vega_f36aa477946a4c5a9c85a86b687d9ce8);
+            
+
+            regular_polygon_marker_df2c891e94bc406dbd89d8ebf3cc0c5d.bindPopup(popup_001077ba6beb4080854e18567e94282e);
+
+            
+                
+            vega_parse({"height": 200, "legends": [{"fill": "color", "offset": 0, "title": "Categories", "properties": {}}], "padding": "auto", "width": 350, "axes": [{"type": "x", "scale": "x", "title": "Datetime"}, {"type": "y", "scale": "y", "title": "Sum of the NUM2"}], "scales": [{"name": "x", "type": "ordinal", "domain": {"field": "data.idx", "data": "table"}, "range": "width"}, {"name": "y", "domain": {"field": "data.val", "data": "table"}, "nice": true, "range": "height"}, {"name": "color", "type": "ordinal", "domain": {"field": "data.col", "data": "table"}, "range": "category20"}], "data": [{"name": "table", "values": [{"col": "QUANT1", "val": 131, "idx": "2/11/13"}, {"col": "QUANT2", "val": 167, "idx": "2/11/13"}, {"col": "QUANT3", "val": 166, "idx": "2/11/13"}, {"col": "QUANT1", "val": 70, "idx": "2/12/13"}, {"col": "QUANT2", "val": 88, "idx": "2/12/13"}, {"col": "QUANT3", "val": 135, "idx": "2/12/13"}, {"col": "QUANT1", "val": 76, "idx": "2/13/13"}, {"col": "QUANT2", "val": 66, "idx": "2/13/13"}, {"col": "QUANT3", "val": 45, "idx": "2/13/13"}, {"col": "QUANT1", "val": 100, "idx": "2/14/13"}, {"col": "QUANT2", "val": 165, "idx": "2/14/13"}, {"col": "QUANT3", "val": 167, "idx": "2/14/13"}, {"col": "QUANT1", "val": 131, "idx": "2/15/13"}, {"col": "QUANT2", "val": 121, "idx": "2/15/13"}, {"col": "QUANT3", "val": 91, "idx": "2/15/13"}, {"col": "QUANT1", "val": 122, "idx": "2/16/13"}, {"col": "QUANT2", "val": 121, "idx": "2/16/13"}, {"col": "QUANT3", "val": 125, "idx": "2/16/13"}, {"col": "QUANT1", "val": 59, "idx": "2/17/13"}, {"col": "QUANT2", "val": 22, "idx": "2/17/13"}, {"col": "QUANT3", "val": 56, "idx": "2/17/13"}, {"col": "QUANT1", "val": 60, "idx": "2/18/13"}, {"col": "QUANT2", "val": 77, "idx": "2/18/13"}, {"col": "QUANT3", "val": 33, "idx": "2/18/13"}]}], "marks": [{"type": "group", "from": {"transform": [{"type": "facet", "keys": ["data.col"]}], "data": "table"}, "marks": [{"type": "line", "properties": {"enter": {"x": {"field": "data.idx", "scale": "x"}, "strokeWidth": {"value": 2}, "stroke": {"field": "data.col", "scale": "color"}, "y": {"field": "data.val", "scale": "y"}}}}]}]},vega_f36aa477946a4c5a9c85a86b687d9ce8);
+            
+            
+        
+    
+            var regular_polygon_marker_8836b41cd827462099d5e096e0aafd1c = new L.RegularPolygonMarker(
+                new L.LatLng(37.174,-113.414),
+                {
+                    icon : new L.Icon.Default(),
+                    color: '#83fcd6',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#83fcd6',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 9.9
+                    }
+                )
+                .addTo(feature_group_6c22e942f68e4e5eb12bd3d8367209b2);
+            
+    
+            var popup_500476d114d7437a8561a62b36504f66 = L.popup({maxWidth: '800'});
+
+            
+                var vega_dfb4c0b2ea5e4869968fb78cb044b53e = $('             <div id="vega_dfb4c0b2ea5e4869968fb78cb044b53e"></div>             ')[0];
+                popup_500476d114d7437a8561a62b36504f66.setContent(vega_dfb4c0b2ea5e4869968fb78cb044b53e);
+            
+
+            regular_polygon_marker_8836b41cd827462099d5e096e0aafd1c.bindPopup(popup_500476d114d7437a8561a62b36504f66);
+
+            
+                
+            vega_parse({"height": 200, "legends": [{"fill": "color", "offset": 0, "title": "Categories", "properties": {}}], "padding": "auto", "width": 350, "axes": [{"type": "x", "scale": "x", "title": "Datetime"}, {"type": "y", "scale": "y", "title": "Sum of the NUM2"}], "scales": [{"name": "x", "type": "ordinal", "domain": {"field": "data.idx", "data": "table"}, "range": "width"}, {"name": "y", "domain": {"field": "data.val", "data": "table"}, "nice": true, "range": "height"}, {"name": "color", "type": "ordinal", "domain": {"field": "data.col", "data": "table"}, "range": "category20"}], "data": [{"name": "table", "values": [{"col": "QUANT1", "val": 131, "idx": "2/11/13"}, {"col": "QUANT2", "val": 167, "idx": "2/11/13"}, {"col": "QUANT3", "val": 166, "idx": "2/11/13"}, {"col": "QUANT1", "val": 70, "idx": "2/12/13"}, {"col": "QUANT2", "val": 88, "idx": "2/12/13"}, {"col": "QUANT3", "val": 135, "idx": "2/12/13"}, {"col": "QUANT1", "val": 76, "idx": "2/13/13"}, {"col": "QUANT2", "val": 66, "idx": "2/13/13"}, {"col": "QUANT3", "val": 45, "idx": "2/13/13"}, {"col": "QUANT1", "val": 100, "idx": "2/14/13"}, {"col": "QUANT2", "val": 165, "idx": "2/14/13"}, {"col": "QUANT3", "val": 167, "idx": "2/14/13"}, {"col": "QUANT1", "val": 131, "idx": "2/15/13"}, {"col": "QUANT2", "val": 121, "idx": "2/15/13"}, {"col": "QUANT3", "val": 91, "idx": "2/15/13"}, {"col": "QUANT1", "val": 122, "idx": "2/16/13"}, {"col": "QUANT2", "val": 121, "idx": "2/16/13"}, {"col": "QUANT3", "val": 125, "idx": "2/16/13"}, {"col": "QUANT1", "val": 59, "idx": "2/17/13"}, {"col": "QUANT2", "val": 22, "idx": "2/17/13"}, {"col": "QUANT3", "val": 56, "idx": "2/17/13"}, {"col": "QUANT1", "val": 60, "idx": "2/18/13"}, {"col": "QUANT2", "val": 77, "idx": "2/18/13"}, {"col": "QUANT3", "val": 33, "idx": "2/18/13"}]}], "marks": [{"type": "group", "from": {"transform": [{"type": "facet", "keys": ["data.col"]}], "data": "table"}, "marks": [{"type": "line", "properties": {"enter": {"x": {"field": "data.idx", "scale": "x"}, "strokeWidth": {"value": 2}, "stroke": {"field": "data.col", "scale": "color"}, "y": {"field": "data.val", "scale": "y"}}}}]}]},vega_dfb4c0b2ea5e4869968fb78cb044b53e);
+            
+            
+        
+    
+            var regular_polygon_marker_c069e495dc0142daba71c45a60c2bd57 = new L.RegularPolygonMarker(
+                new L.LatLng(51.127,-178.08),
+                {
+                    icon : new L.Icon.Default(),
+                    color: '#72bc23',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#72bc23',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5.7
+                    }
+                )
+                .addTo(feature_group_6c22e942f68e4e5eb12bd3d8367209b2);
+            
+    
+            var popup_d0ec715b26b543ff9d18e20fe6b57a42 = L.popup({maxWidth: '800'});
+
+            
+                var vega_6d13b7b2fcc1478fbc9e08f4aa6bbe1c = $('             <div id="vega_6d13b7b2fcc1478fbc9e08f4aa6bbe1c"></div>             ')[0];
+                popup_d0ec715b26b543ff9d18e20fe6b57a42.setContent(vega_6d13b7b2fcc1478fbc9e08f4aa6bbe1c);
+            
+
+            regular_polygon_marker_c069e495dc0142daba71c45a60c2bd57.bindPopup(popup_d0ec715b26b543ff9d18e20fe6b57a42);
+
+            
+                
+            vega_parse({"height": 200, "legends": [{"fill": "color", "offset": 0, "title": "Categories", "properties": {}}], "padding": "auto", "width": 350, "axes": [{"type": "x", "scale": "x", "title": "Datetime"}, {"type": "y", "scale": "y", "title": "Sum of the NUM2"}], "scales": [{"name": "x", "type": "ordinal", "domain": {"field": "data.idx", "data": "table"}, "range": "width"}, {"name": "y", "domain": {"field": "data.val", "data": "table"}, "nice": true, "range": "height"}, {"name": "color", "type": "ordinal", "domain": {"field": "data.col", "data": "table"}, "range": "category20"}], "data": [{"name": "table", "values": [{"col": "QUANT1", "val": 131, "idx": "2/11/13"}, {"col": "QUANT2", "val": 167, "idx": "2/11/13"}, {"col": "QUANT3", "val": 166, "idx": "2/11/13"}, {"col": "QUANT1", "val": 70, "idx": "2/12/13"}, {"col": "QUANT2", "val": 88, "idx": "2/12/13"}, {"col": "QUANT3", "val": 135, "idx": "2/12/13"}, {"col": "QUANT1", "val": 76, "idx": "2/13/13"}, {"col": "QUANT2", "val": 66, "idx": "2/13/13"}, {"col": "QUANT3", "val": 45, "idx": "2/13/13"}, {"col": "QUANT1", "val": 100, "idx": "2/14/13"}, {"col": "QUANT2", "val": 165, "idx": "2/14/13"}, {"col": "QUANT3", "val": 167, "idx": "2/14/13"}, {"col": "QUANT1", "val": 131, "idx": "2/15/13"}, {"col": "QUANT2", "val": 121, "idx": "2/15/13"}, {"col": "QUANT3", "val": 91, "idx": "2/15/13"}, {"col": "QUANT1", "val": 122, "idx": "2/16/13"}, {"col": "QUANT2", "val": 121, "idx": "2/16/13"}, {"col": "QUANT3", "val": 125, "idx": "2/16/13"}, {"col": "QUANT1", "val": 59, "idx": "2/17/13"}, {"col": "QUANT2", "val": 22, "idx": "2/17/13"}, {"col": "QUANT3", "val": 56, "idx": "2/17/13"}, {"col": "QUANT1", "val": 60, "idx": "2/18/13"}, {"col": "QUANT2", "val": 77, "idx": "2/18/13"}, {"col": "QUANT3", "val": 33, "idx": "2/18/13"}]}], "marks": [{"type": "group", "from": {"transform": [{"type": "facet", "keys": ["data.col"]}], "data": "table"}, "marks": [{"type": "line", "properties": {"enter": {"x": {"field": "data.idx", "scale": "x"}, "strokeWidth": {"value": 2}, "stroke": {"field": "data.col", "scale": "color"}, "y": {"field": "data.val", "scale": "y"}}}}]}]},vega_6d13b7b2fcc1478fbc9e08f4aa6bbe1c);
+            
+            
+        
+    
+            var regular_polygon_marker_68f9e531311a487bb22ee7f67f98dc0f = new L.RegularPolygonMarker(
+                new L.LatLng(21.648,143.032),
+                {
+                    icon : new L.Icon.Default(),
+                    color: '#d36945',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#d36945',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 6.8
+                    }
+                )
+                .addTo(feature_group_6c22e942f68e4e5eb12bd3d8367209b2);
+            
+    
+            var popup_0b533eac7cde45a9b3b96dbca29d1acc = L.popup({maxWidth: '800'});
+
+            
+                var vega_24466c0ac66149f6b633cc175dcf0df0 = $('             <div id="vega_24466c0ac66149f6b633cc175dcf0df0"></div>             ')[0];
+                popup_0b533eac7cde45a9b3b96dbca29d1acc.setContent(vega_24466c0ac66149f6b633cc175dcf0df0);
+            
+
+            regular_polygon_marker_68f9e531311a487bb22ee7f67f98dc0f.bindPopup(popup_0b533eac7cde45a9b3b96dbca29d1acc);
+
+            
+                
+            vega_parse({"height": 200, "legends": [{"fill": "color", "offset": 0, "title": "Categories", "properties": {}}], "padding": "auto", "width": 350, "axes": [{"type": "x", "scale": "x", "title": "Datetime"}, {"type": "y", "scale": "y", "title": "Sum of the NUM2"}], "scales": [{"name": "x", "type": "ordinal", "domain": {"field": "data.idx", "data": "table"}, "range": "width"}, {"name": "y", "domain": {"field": "data.val", "data": "table"}, "nice": true, "range": "height"}, {"name": "color", "type": "ordinal", "domain": {"field": "data.col", "data": "table"}, "range": "category20"}], "data": [{"name": "table", "values": [{"col": "QUANT1", "val": 131, "idx": "2/11/13"}, {"col": "QUANT2", "val": 167, "idx": "2/11/13"}, {"col": "QUANT3", "val": 166, "idx": "2/11/13"}, {"col": "QUANT1", "val": 70, "idx": "2/12/13"}, {"col": "QUANT2", "val": 88, "idx": "2/12/13"}, {"col": "QUANT3", "val": 135, "idx": "2/12/13"}, {"col": "QUANT1", "val": 76, "idx": "2/13/13"}, {"col": "QUANT2", "val": 66, "idx": "2/13/13"}, {"col": "QUANT3", "val": 45, "idx": "2/13/13"}, {"col": "QUANT1", "val": 100, "idx": "2/14/13"}, {"col": "QUANT2", "val": 165, "idx": "2/14/13"}, {"col": "QUANT3", "val": 167, "idx": "2/14/13"}, {"col": "QUANT1", "val": 131, "idx": "2/15/13"}, {"col": "QUANT2", "val": 121, "idx": "2/15/13"}, {"col": "QUANT3", "val": 91, "idx": "2/15/13"}, {"col": "QUANT1", "val": 122, "idx": "2/16/13"}, {"col": "QUANT2", "val": 121, "idx": "2/16/13"}, {"col": "QUANT3", "val": 125, "idx": "2/16/13"}, {"col": "QUANT1", "val": 59, "idx": "2/17/13"}, {"col": "QUANT2", "val": 22, "idx": "2/17/13"}, {"col": "QUANT3", "val": 56, "idx": "2/17/13"}, {"col": "QUANT1", "val": 60, "idx": "2/18/13"}, {"col": "QUANT2", "val": 77, "idx": "2/18/13"}, {"col": "QUANT3", "val": 33, "idx": "2/18/13"}]}], "marks": [{"type": "group", "from": {"transform": [{"type": "facet", "keys": ["data.col"]}], "data": "table"}, "marks": [{"type": "line", "properties": {"enter": {"x": {"field": "data.idx", "scale": "x"}, "strokeWidth": {"value": 2}, "stroke": {"field": "data.col", "scale": "color"}, "y": {"field": "data.val", "scale": "y"}}}}]}]},vega_24466c0ac66149f6b633cc175dcf0df0);
+            
+            
+        
+    
+            var regular_polygon_marker_6969bad5e04c441a9ba18c89b57e0293 = new L.RegularPolygonMarker(
+                new L.LatLng(19.103,-64.754),
+                {
+                    icon : new L.Icon.Default(),
+                    color: '#72bc23',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#72bc23',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 7.8
+                    }
+                )
+                .addTo(feature_group_6c22e942f68e4e5eb12bd3d8367209b2);
+            
+    
+            var popup_80806a8b0bf14160878cf9dac94b6c38 = L.popup({maxWidth: '800'});
+
+            
+                var vega_7cb8e5f3e3754840bb73c16ae891f882 = $('             <div id="vega_7cb8e5f3e3754840bb73c16ae891f882"></div>             ')[0];
+                popup_80806a8b0bf14160878cf9dac94b6c38.setContent(vega_7cb8e5f3e3754840bb73c16ae891f882);
+            
+
+            regular_polygon_marker_6969bad5e04c441a9ba18c89b57e0293.bindPopup(popup_80806a8b0bf14160878cf9dac94b6c38);
+
+            
+                
+            vega_parse({"height": 200, "legends": [{"fill": "color", "offset": 0, "title": "Categories", "properties": {}}], "padding": "auto", "width": 350, "axes": [{"type": "x", "scale": "x", "title": "Datetime"}, {"type": "y", "scale": "y", "title": "Sum of the NUM2"}], "scales": [{"name": "x", "type": "ordinal", "domain": {"field": "data.idx", "data": "table"}, "range": "width"}, {"name": "y", "domain": {"field": "data.val", "data": "table"}, "nice": true, "range": "height"}, {"name": "color", "type": "ordinal", "domain": {"field": "data.col", "data": "table"}, "range": "category20"}], "data": [{"name": "table", "values": [{"col": "QUANT1", "val": 131, "idx": "2/11/13"}, {"col": "QUANT2", "val": 167, "idx": "2/11/13"}, {"col": "QUANT3", "val": 166, "idx": "2/11/13"}, {"col": "QUANT1", "val": 70, "idx": "2/12/13"}, {"col": "QUANT2", "val": 88, "idx": "2/12/13"}, {"col": "QUANT3", "val": 135, "idx": "2/12/13"}, {"col": "QUANT1", "val": 76, "idx": "2/13/13"}, {"col": "QUANT2", "val": 66, "idx": "2/13/13"}, {"col": "QUANT3", "val": 45, "idx": "2/13/13"}, {"col": "QUANT1", "val": 100, "idx": "2/14/13"}, {"col": "QUANT2", "val": 165, "idx": "2/14/13"}, {"col": "QUANT3", "val": 167, "idx": "2/14/13"}, {"col": "QUANT1", "val": 131, "idx": "2/15/13"}, {"col": "QUANT2", "val": 121, "idx": "2/15/13"}, {"col": "QUANT3", "val": 91, "idx": "2/15/13"}, {"col": "QUANT1", "val": 122, "idx": "2/16/13"}, {"col": "QUANT2", "val": 121, "idx": "2/16/13"}, {"col": "QUANT3", "val": 125, "idx": "2/16/13"}, {"col": "QUANT1", "val": 59, "idx": "2/17/13"}, {"col": "QUANT2", "val": 22, "idx": "2/17/13"}, {"col": "QUANT3", "val": 56, "idx": "2/17/13"}, {"col": "QUANT1", "val": 60, "idx": "2/18/13"}, {"col": "QUANT2", "val": 77, "idx": "2/18/13"}, {"col": "QUANT3", "val": 33, "idx": "2/18/13"}]}], "marks": [{"type": "group", "from": {"transform": [{"type": "facet", "keys": ["data.col"]}], "data": "table"}, "marks": [{"type": "line", "properties": {"enter": {"x": {"field": "data.idx", "scale": "x"}, "strokeWidth": {"value": 2}, "stroke": {"field": "data.col", "scale": "color"}, "y": {"field": "data.val", "scale": "y"}}}}]}]},vega_7cb8e5f3e3754840bb73c16ae891f882);
+            
+            
+        
+    
+            var regular_polygon_marker_74c3c5f2a41546f1816cc687d764a562 = new L.RegularPolygonMarker(
+                new L.LatLng(-10.28,161.56),
+                {
+                    icon : new L.Icon.Default(),
+                    color: '#83fcd6',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#83fcd6',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 4.4
+                    }
+                )
+                .addTo(feature_group_6c22e942f68e4e5eb12bd3d8367209b2);
+            
+    
+            var popup_0d7600a594134302ae70b356e630fade = L.popup({maxWidth: '800'});
+
+            
+                var vega_6c1b12ce14954bdaa28c7c50ae021d1c = $('             <div id="vega_6c1b12ce14954bdaa28c7c50ae021d1c"></div>             ')[0];
+                popup_0d7600a594134302ae70b356e630fade.setContent(vega_6c1b12ce14954bdaa28c7c50ae021d1c);
+            
+
+            regular_polygon_marker_74c3c5f2a41546f1816cc687d764a562.bindPopup(popup_0d7600a594134302ae70b356e630fade);
+
+            
+                
+            vega_parse({"height": 200, "legends": [{"fill": "color", "offset": 0, "title": "Categories", "properties": {}}], "padding": "auto", "width": 350, "axes": [{"type": "x", "scale": "x", "title": "Datetime"}, {"type": "y", "scale": "y", "title": "Sum of the NUM2"}], "scales": [{"name": "x", "type": "ordinal", "domain": {"field": "data.idx", "data": "table"}, "range": "width"}, {"name": "y", "domain": {"field": "data.val", "data": "table"}, "nice": true, "range": "height"}, {"name": "color", "type": "ordinal", "domain": {"field": "data.col", "data": "table"}, "range": "category20"}], "data": [{"name": "table", "values": [{"col": "QUANT1", "val": 131, "idx": "2/11/13"}, {"col": "QUANT2", "val": 167, "idx": "2/11/13"}, {"col": "QUANT3", "val": 166, "idx": "2/11/13"}, {"col": "QUANT1", "val": 70, "idx": "2/12/13"}, {"col": "QUANT2", "val": 88, "idx": "2/12/13"}, {"col": "QUANT3", "val": 135, "idx": "2/12/13"}, {"col": "QUANT1", "val": 76, "idx": "2/13/13"}, {"col": "QUANT2", "val": 66, "idx": "2/13/13"}, {"col": "QUANT3", "val": 45, "idx": "2/13/13"}, {"col": "QUANT1", "val": 100, "idx": "2/14/13"}, {"col": "QUANT2", "val": 165, "idx": "2/14/13"}, {"col": "QUANT3", "val": 167, "idx": "2/14/13"}, {"col": "QUANT1", "val": 131, "idx": "2/15/13"}, {"col": "QUANT2", "val": 121, "idx": "2/15/13"}, {"col": "QUANT3", "val": 91, "idx": "2/15/13"}, {"col": "QUANT1", "val": 122, "idx": "2/16/13"}, {"col": "QUANT2", "val": 121, "idx": "2/16/13"}, {"col": "QUANT3", "val": 125, "idx": "2/16/13"}, {"col": "QUANT1", "val": 59, "idx": "2/17/13"}, {"col": "QUANT2", "val": 22, "idx": "2/17/13"}, {"col": "QUANT3", "val": 56, "idx": "2/17/13"}, {"col": "QUANT1", "val": 60, "idx": "2/18/13"}, {"col": "QUANT2", "val": 77, "idx": "2/18/13"}, {"col": "QUANT3", "val": 33, "idx": "2/18/13"}]}], "marks": [{"type": "group", "from": {"transform": [{"type": "facet", "keys": ["data.col"]}], "data": "table"}, "marks": [{"type": "line", "properties": {"enter": {"x": {"field": "data.idx", "scale": "x"}, "strokeWidth": {"value": 2}, "stroke": {"field": "data.col", "scale": "color"}, "y": {"field": "data.val", "scale": "y"}}}}]}]},vega_6c1b12ce14954bdaa28c7c50ae021d1c);
+            
+            
+        
+    
+            var regular_polygon_marker_d2f4cc15442c4eda9a289871c77a3d0c = new L.RegularPolygonMarker(
+                new L.LatLng(40.148,-121.068),
+                {
+                    icon : new L.Icon.Default(),
+                    color: '#83fcd6',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#83fcd6',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 6.7
+                    }
+                )
+                .addTo(feature_group_6c22e942f68e4e5eb12bd3d8367209b2);
+            
+    
+            var popup_cc773a0ed50b43d39fe311729e415eeb = L.popup({maxWidth: '800'});
+
+            
+                var vega_5d884139e99a4af6a5fe07519a2ce954 = $('             <div id="vega_5d884139e99a4af6a5fe07519a2ce954"></div>             ')[0];
+                popup_cc773a0ed50b43d39fe311729e415eeb.setContent(vega_5d884139e99a4af6a5fe07519a2ce954);
+            
+
+            regular_polygon_marker_d2f4cc15442c4eda9a289871c77a3d0c.bindPopup(popup_cc773a0ed50b43d39fe311729e415eeb);
+
+            
+                
+            vega_parse({"height": 200, "legends": [{"fill": "color", "offset": 0, "title": "Categories", "properties": {}}], "padding": "auto", "width": 350, "axes": [{"type": "x", "scale": "x", "title": "Datetime"}, {"type": "y", "scale": "y", "title": "Sum of the NUM2"}], "scales": [{"name": "x", "type": "ordinal", "domain": {"field": "data.idx", "data": "table"}, "range": "width"}, {"name": "y", "domain": {"field": "data.val", "data": "table"}, "nice": true, "range": "height"}, {"name": "color", "type": "ordinal", "domain": {"field": "data.col", "data": "table"}, "range": "category20"}], "data": [{"name": "table", "values": [{"col": "QUANT1", "val": 131, "idx": "2/11/13"}, {"col": "QUANT2", "val": 167, "idx": "2/11/13"}, {"col": "QUANT3", "val": 166, "idx": "2/11/13"}, {"col": "QUANT1", "val": 70, "idx": "2/12/13"}, {"col": "QUANT2", "val": 88, "idx": "2/12/13"}, {"col": "QUANT3", "val": 135, "idx": "2/12/13"}, {"col": "QUANT1", "val": 76, "idx": "2/13/13"}, {"col": "QUANT2", "val": 66, "idx": "2/13/13"}, {"col": "QUANT3", "val": 45, "idx": "2/13/13"}, {"col": "QUANT1", "val": 100, "idx": "2/14/13"}, {"col": "QUANT2", "val": 165, "idx": "2/14/13"}, {"col": "QUANT3", "val": 167, "idx": "2/14/13"}, {"col": "QUANT1", "val": 131, "idx": "2/15/13"}, {"col": "QUANT2", "val": 121, "idx": "2/15/13"}, {"col": "QUANT3", "val": 91, "idx": "2/15/13"}, {"col": "QUANT1", "val": 122, "idx": "2/16/13"}, {"col": "QUANT2", "val": 121, "idx": "2/16/13"}, {"col": "QUANT3", "val": 125, "idx": "2/16/13"}, {"col": "QUANT1", "val": 59, "idx": "2/17/13"}, {"col": "QUANT2", "val": 22, "idx": "2/17/13"}, {"col": "QUANT3", "val": 56, "idx": "2/17/13"}, {"col": "QUANT1", "val": 60, "idx": "2/18/13"}, {"col": "QUANT2", "val": 77, "idx": "2/18/13"}, {"col": "QUANT3", "val": 33, "idx": "2/18/13"}]}], "marks": [{"type": "group", "from": {"transform": [{"type": "facet", "keys": ["data.col"]}], "data": "table"}, "marks": [{"type": "line", "properties": {"enter": {"x": {"field": "data.idx", "scale": "x"}, "strokeWidth": {"value": 2}, "stroke": {"field": "data.col", "scale": "color"}, "y": {"field": "data.val", "scale": "y"}}}}]}]},vega_5d884139e99a4af6a5fe07519a2ce954);
+            
+            
+        
+    
+            var regular_polygon_marker_c70db91b8ed841ecbed6bc7ccdf4e683 = new L.RegularPolygonMarker(
+                new L.LatLng(18.185,-67.355),
+                {
+                    icon : new L.Icon.Default(),
+                    color: '#d36945',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#d36945',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5.8
+                    }
+                )
+                .addTo(feature_group_6c22e942f68e4e5eb12bd3d8367209b2);
+            
+    
+            var popup_285d77a3d9ed43c0a8d1c417fae9d609 = L.popup({maxWidth: '800'});
+
+            
+                var vega_329f140fe06b46c3af43c26a05e7ef32 = $('             <div id="vega_329f140fe06b46c3af43c26a05e7ef32"></div>             ')[0];
+                popup_285d77a3d9ed43c0a8d1c417fae9d609.setContent(vega_329f140fe06b46c3af43c26a05e7ef32);
+            
+
+            regular_polygon_marker_c70db91b8ed841ecbed6bc7ccdf4e683.bindPopup(popup_285d77a3d9ed43c0a8d1c417fae9d609);
+
+            
+                
+            vega_parse({"height": 200, "legends": [{"fill": "color", "offset": 0, "title": "Categories", "properties": {}}], "padding": "auto", "width": 350, "axes": [{"type": "x", "scale": "x", "title": "Datetime"}, {"type": "y", "scale": "y", "title": "Sum of the NUM2"}], "scales": [{"name": "x", "type": "ordinal", "domain": {"field": "data.idx", "data": "table"}, "range": "width"}, {"name": "y", "domain": {"field": "data.val", "data": "table"}, "nice": true, "range": "height"}, {"name": "color", "type": "ordinal", "domain": {"field": "data.col", "data": "table"}, "range": "category20"}], "data": [{"name": "table", "values": [{"col": "QUANT1", "val": 131, "idx": "2/11/13"}, {"col": "QUANT2", "val": 167, "idx": "2/11/13"}, {"col": "QUANT3", "val": 166, "idx": "2/11/13"}, {"col": "QUANT1", "val": 70, "idx": "2/12/13"}, {"col": "QUANT2", "val": 88, "idx": "2/12/13"}, {"col": "QUANT3", "val": 135, "idx": "2/12/13"}, {"col": "QUANT1", "val": 76, "idx": "2/13/13"}, {"col": "QUANT2", "val": 66, "idx": "2/13/13"}, {"col": "QUANT3", "val": 45, "idx": "2/13/13"}, {"col": "QUANT1", "val": 100, "idx": "2/14/13"}, {"col": "QUANT2", "val": 165, "idx": "2/14/13"}, {"col": "QUANT3", "val": 167, "idx": "2/14/13"}, {"col": "QUANT1", "val": 131, "idx": "2/15/13"}, {"col": "QUANT2", "val": 121, "idx": "2/15/13"}, {"col": "QUANT3", "val": 91, "idx": "2/15/13"}, {"col": "QUANT1", "val": 122, "idx": "2/16/13"}, {"col": "QUANT2", "val": 121, "idx": "2/16/13"}, {"col": "QUANT3", "val": 125, "idx": "2/16/13"}, {"col": "QUANT1", "val": 59, "idx": "2/17/13"}, {"col": "QUANT2", "val": 22, "idx": "2/17/13"}, {"col": "QUANT3", "val": 56, "idx": "2/17/13"}, {"col": "QUANT1", "val": 60, "idx": "2/18/13"}, {"col": "QUANT2", "val": 77, "idx": "2/18/13"}, {"col": "QUANT3", "val": 33, "idx": "2/18/13"}]}], "marks": [{"type": "group", "from": {"transform": [{"type": "facet", "keys": ["data.col"]}], "data": "table"}, "marks": [{"type": "line", "properties": {"enter": {"x": {"field": "data.idx", "scale": "x"}, "strokeWidth": {"value": 2}, "stroke": {"field": "data.col", "scale": "color"}, "y": {"field": "data.val", "scale": "y"}}}}]}]},vega_329f140fe06b46c3af43c26a05e7ef32);
+            
+            
+        
+    
+            var regular_polygon_marker_5b3b1848f25b45919d883144d95829f7 = new L.RegularPolygonMarker(
+                new L.LatLng(56.139,-160.718),
+                {
+                    icon : new L.Icon.Default(),
+                    color: '#72bc23',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#72bc23',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 4.7
+                    }
+                )
+                .addTo(feature_group_6c22e942f68e4e5eb12bd3d8367209b2);
+            
+    
+            var popup_73e2edac35334b98a40974e33dc033f6 = L.popup({maxWidth: '800'});
+
+            
+                var vega_8b6d2112a67f4dbd9361919f6789a2b2 = $('             <div id="vega_8b6d2112a67f4dbd9361919f6789a2b2"></div>             ')[0];
+                popup_73e2edac35334b98a40974e33dc033f6.setContent(vega_8b6d2112a67f4dbd9361919f6789a2b2);
+            
+
+            regular_polygon_marker_5b3b1848f25b45919d883144d95829f7.bindPopup(popup_73e2edac35334b98a40974e33dc033f6);
+
+            
+                
+            vega_parse({"height": 200, "legends": [{"fill": "color", "offset": 0, "title": "Categories", "properties": {}}], "padding": "auto", "width": 350, "axes": [{"type": "x", "scale": "x", "title": "Datetime"}, {"type": "y", "scale": "y", "title": "Sum of the NUM2"}], "scales": [{"name": "x", "type": "ordinal", "domain": {"field": "data.idx", "data": "table"}, "range": "width"}, {"name": "y", "domain": {"field": "data.val", "data": "table"}, "nice": true, "range": "height"}, {"name": "color", "type": "ordinal", "domain": {"field": "data.col", "data": "table"}, "range": "category20"}], "data": [{"name": "table", "values": [{"col": "QUANT1", "val": 131, "idx": "2/11/13"}, {"col": "QUANT2", "val": 167, "idx": "2/11/13"}, {"col": "QUANT3", "val": 166, "idx": "2/11/13"}, {"col": "QUANT1", "val": 70, "idx": "2/12/13"}, {"col": "QUANT2", "val": 88, "idx": "2/12/13"}, {"col": "QUANT3", "val": 135, "idx": "2/12/13"}, {"col": "QUANT1", "val": 76, "idx": "2/13/13"}, {"col": "QUANT2", "val": 66, "idx": "2/13/13"}, {"col": "QUANT3", "val": 45, "idx": "2/13/13"}, {"col": "QUANT1", "val": 100, "idx": "2/14/13"}, {"col": "QUANT2", "val": 165, "idx": "2/14/13"}, {"col": "QUANT3", "val": 167, "idx": "2/14/13"}, {"col": "QUANT1", "val": 131, "idx": "2/15/13"}, {"col": "QUANT2", "val": 121, "idx": "2/15/13"}, {"col": "QUANT3", "val": 91, "idx": "2/15/13"}, {"col": "QUANT1", "val": 122, "idx": "2/16/13"}, {"col": "QUANT2", "val": 121, "idx": "2/16/13"}, {"col": "QUANT3", "val": 125, "idx": "2/16/13"}, {"col": "QUANT1", "val": 59, "idx": "2/17/13"}, {"col": "QUANT2", "val": 22, "idx": "2/17/13"}, {"col": "QUANT3", "val": 56, "idx": "2/17/13"}, {"col": "QUANT1", "val": 60, "idx": "2/18/13"}, {"col": "QUANT2", "val": 77, "idx": "2/18/13"}, {"col": "QUANT3", "val": 33, "idx": "2/18/13"}]}], "marks": [{"type": "group", "from": {"transform": [{"type": "facet", "keys": ["data.col"]}], "data": "table"}, "marks": [{"type": "line", "properties": {"enter": {"x": {"field": "data.idx", "scale": "x"}, "strokeWidth": {"value": 2}, "stroke": {"field": "data.col", "scale": "color"}, "y": {"field": "data.val", "scale": "y"}}}}]}]},vega_8b6d2112a67f4dbd9361919f6789a2b2);
+            
+            
+        
+    
+            var regular_polygon_marker_ccc318958bd84f95842cca18e5f72231 = new L.RegularPolygonMarker(
+                new L.LatLng(62.172,-148.162),
+                {
+                    icon : new L.Icon.Default(),
+                    color: '#83fcd6',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#83fcd6',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 5.6
+                    }
+                )
+                .addTo(feature_group_6c22e942f68e4e5eb12bd3d8367209b2);
+            
+    
+            var popup_02a2f92f492c4a8db1c18f29838c991b = L.popup({maxWidth: '800'});
+
+            
+                var vega_c7174f96e6994aeea70f32566b2c9c41 = $('             <div id="vega_c7174f96e6994aeea70f32566b2c9c41"></div>             ')[0];
+                popup_02a2f92f492c4a8db1c18f29838c991b.setContent(vega_c7174f96e6994aeea70f32566b2c9c41);
+            
+
+            regular_polygon_marker_ccc318958bd84f95842cca18e5f72231.bindPopup(popup_02a2f92f492c4a8db1c18f29838c991b);
+
+            
+                
+            vega_parse({"height": 200, "legends": [{"fill": "color", "offset": 0, "title": "Categories", "properties": {}}], "padding": "auto", "width": 350, "axes": [{"type": "x", "scale": "x", "title": "Datetime"}, {"type": "y", "scale": "y", "title": "Sum of the NUM2"}], "scales": [{"name": "x", "type": "ordinal", "domain": {"field": "data.idx", "data": "table"}, "range": "width"}, {"name": "y", "domain": {"field": "data.val", "data": "table"}, "nice": true, "range": "height"}, {"name": "color", "type": "ordinal", "domain": {"field": "data.col", "data": "table"}, "range": "category20"}], "data": [{"name": "table", "values": [{"col": "QUANT1", "val": 131, "idx": "2/11/13"}, {"col": "QUANT2", "val": 167, "idx": "2/11/13"}, {"col": "QUANT3", "val": 166, "idx": "2/11/13"}, {"col": "QUANT1", "val": 70, "idx": "2/12/13"}, {"col": "QUANT2", "val": 88, "idx": "2/12/13"}, {"col": "QUANT3", "val": 135, "idx": "2/12/13"}, {"col": "QUANT1", "val": 76, "idx": "2/13/13"}, {"col": "QUANT2", "val": 66, "idx": "2/13/13"}, {"col": "QUANT3", "val": 45, "idx": "2/13/13"}, {"col": "QUANT1", "val": 100, "idx": "2/14/13"}, {"col": "QUANT2", "val": 165, "idx": "2/14/13"}, {"col": "QUANT3", "val": 167, "idx": "2/14/13"}, {"col": "QUANT1", "val": 131, "idx": "2/15/13"}, {"col": "QUANT2", "val": 121, "idx": "2/15/13"}, {"col": "QUANT3", "val": 91, "idx": "2/15/13"}, {"col": "QUANT1", "val": 122, "idx": "2/16/13"}, {"col": "QUANT2", "val": 121, "idx": "2/16/13"}, {"col": "QUANT3", "val": 125, "idx": "2/16/13"}, {"col": "QUANT1", "val": 59, "idx": "2/17/13"}, {"col": "QUANT2", "val": 22, "idx": "2/17/13"}, {"col": "QUANT3", "val": 56, "idx": "2/17/13"}, {"col": "QUANT1", "val": 60, "idx": "2/18/13"}, {"col": "QUANT2", "val": 77, "idx": "2/18/13"}, {"col": "QUANT3", "val": 33, "idx": "2/18/13"}]}], "marks": [{"type": "group", "from": {"transform": [{"type": "facet", "keys": ["data.col"]}], "data": "table"}, "marks": [{"type": "line", "properties": {"enter": {"x": {"field": "data.idx", "scale": "x"}, "strokeWidth": {"value": 2}, "stroke": {"field": "data.col", "scale": "color"}, "y": {"field": "data.val", "scale": "y"}}}}]}]},vega_c7174f96e6994aeea70f32566b2c9c41);
+            
+            
+        
+    
+            var regular_polygon_marker_ca6b4c583d0c4301941bdf736e73608a = new L.RegularPolygonMarker(
+                new L.LatLng(-43.36,172.945),
+                {
+                    icon : new L.Icon.Default(),
+                    color: '#d36945',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#d36945',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 3.3
+                    }
+                )
+                .addTo(feature_group_6c22e942f68e4e5eb12bd3d8367209b2);
+            
+    
+            var popup_50f4ec69c1cc4392a1933d2a49672dd0 = L.popup({maxWidth: '800'});
+
+            
+                var vega_46d03ee87c74486ca0f903b2d0168085 = $('             <div id="vega_46d03ee87c74486ca0f903b2d0168085"></div>             ')[0];
+                popup_50f4ec69c1cc4392a1933d2a49672dd0.setContent(vega_46d03ee87c74486ca0f903b2d0168085);
+            
+
+            regular_polygon_marker_ca6b4c583d0c4301941bdf736e73608a.bindPopup(popup_50f4ec69c1cc4392a1933d2a49672dd0);
+
+            
+                
+            vega_parse({"height": 200, "legends": [{"fill": "color", "offset": 0, "title": "Categories", "properties": {}}], "padding": "auto", "width": 350, "axes": [{"type": "x", "scale": "x", "title": "Datetime"}, {"type": "y", "scale": "y", "title": "Sum of the NUM2"}], "scales": [{"name": "x", "type": "ordinal", "domain": {"field": "data.idx", "data": "table"}, "range": "width"}, {"name": "y", "domain": {"field": "data.val", "data": "table"}, "nice": true, "range": "height"}, {"name": "color", "type": "ordinal", "domain": {"field": "data.col", "data": "table"}, "range": "category20"}], "data": [{"name": "table", "values": [{"col": "QUANT1", "val": 131, "idx": "2/11/13"}, {"col": "QUANT2", "val": 167, "idx": "2/11/13"}, {"col": "QUANT3", "val": 166, "idx": "2/11/13"}, {"col": "QUANT1", "val": 70, "idx": "2/12/13"}, {"col": "QUANT2", "val": 88, "idx": "2/12/13"}, {"col": "QUANT3", "val": 135, "idx": "2/12/13"}, {"col": "QUANT1", "val": 76, "idx": "2/13/13"}, {"col": "QUANT2", "val": 66, "idx": "2/13/13"}, {"col": "QUANT3", "val": 45, "idx": "2/13/13"}, {"col": "QUANT1", "val": 100, "idx": "2/14/13"}, {"col": "QUANT2", "val": 165, "idx": "2/14/13"}, {"col": "QUANT3", "val": 167, "idx": "2/14/13"}, {"col": "QUANT1", "val": 131, "idx": "2/15/13"}, {"col": "QUANT2", "val": 121, "idx": "2/15/13"}, {"col": "QUANT3", "val": 91, "idx": "2/15/13"}, {"col": "QUANT1", "val": 122, "idx": "2/16/13"}, {"col": "QUANT2", "val": 121, "idx": "2/16/13"}, {"col": "QUANT3", "val": 125, "idx": "2/16/13"}, {"col": "QUANT1", "val": 59, "idx": "2/17/13"}, {"col": "QUANT2", "val": 22, "idx": "2/17/13"}, {"col": "QUANT3", "val": 56, "idx": "2/17/13"}, {"col": "QUANT1", "val": 60, "idx": "2/18/13"}, {"col": "QUANT2", "val": 77, "idx": "2/18/13"}, {"col": "QUANT3", "val": 33, "idx": "2/18/13"}]}], "marks": [{"type": "group", "from": {"transform": [{"type": "facet", "keys": ["data.col"]}], "data": "table"}, "marks": [{"type": "line", "properties": {"enter": {"x": {"field": "data.idx", "scale": "x"}, "strokeWidth": {"value": 2}, "stroke": {"field": "data.col", "scale": "color"}, "y": {"field": "data.val", "scale": "y"}}}}]}]},vega_46d03ee87c74486ca0f903b2d0168085);
+            
+            
+        
+    
+            var layer_control_ac365a8948d84c89b1413b4906b78132 = {
+                base_layers : { "stamenterrain" : tile_layer_4d38daafaac1453f9dfa25b975b1a32c, },
+                overlays : { "QUANT1" : feature_group_2db2435d98374ca8a3d757381b09c040,"Numeric2 Data,Categories Chart" : feature_group_044115d5e7d14ec8b687f4251b95d2c2,"NUM3,Datetime Chart" : feature_group_6c22e942f68e4e5eb12bd3d8367209b2, }
+                };
+            L.control.layers(
+                layer_control_ac365a8948d84c89b1413b4906b78132.base_layers,
+                layer_control_ac365a8948d84c89b1413b4906b78132.overlays,
+                {position: 'topright',
+                 collapsed: true,
+                 autoZIndex: true
+                }).addTo(map_9f091e85aea34e37abd7981e2927ac75);
+        
+</script>
