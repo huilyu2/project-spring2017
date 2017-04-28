@@ -9,6 +9,9 @@ In particular, we check the GTFS data feed to better understand the several file
 
 ### Figure 1: Location of Bus Stops
 For this part of code, I refer to the previous assignment on defining a class in course LIS590DV, and then pass the stops.csv dataset into it.
+
+![Location of Bus Stops](https://github.com/huilyu2/project-spring2017/blob/master/part1/output-images/Location%20of%20Bus%20Stops.png)
+
 * Approach: 
 
   scatterplot (longitude and latitude as axes, alpha=0.4, dotted grid line)
@@ -21,6 +24,8 @@ For this part of code, I refer to the previous assignment on defining a class in
 
 ### Figure 2: Density of Bus Stops of CUMTD
 The main approach to calculate density is binning. The binning function codes are referenced from Professor Matthew Turk's lecture notes of LIS590DV course.
+
+![Density of Bus Stops of CUMTD](https://github.com/huilyu2/project-spring2017/blob/master/part1/output-images/Density%20of%20Bus%20Stops.png)
 
 * Approach: 
 
@@ -39,6 +44,8 @@ To better locate the bus stops on a geographical map, I choose to use Google Map
 
 This is the reference document. http://jupyter-gmaps.readthedocs.io/en/latest/gmaps.html#markers-and-symbols
 
+![Location of Bus Stops on Google Map](https://github.com/huilyu2/project-spring2017/blob/master/part1/output-images/Bus%20Stops%20on%20Google%20Map.PNG)
+
 * Approach: 
 
   There are several ways to add different kinds of layers on Google Map. For the purpose of locating the stops, I choose the symbol_layer to plot dots on map. Each dot represents a single bus stop.
@@ -51,6 +58,8 @@ This is the reference document. http://jupyter-gmaps.readthedocs.io/en/latest/gm
 
 ### Figure 4: Distribution of Routes with Different Numbers of Trips
 Each route may correspond to multiple trips. To get a basic understanding of how many trips (buses) are there for each route. I plot a histogram to see the distribution.
+
+![Distribution of Routes with Different Numbers of Trips](https://github.com/huilyu2/project-spring2017/blob/master/part1/output-images/Distribution%20of%20Routes%20with%20Trips.png)
 
 * Approach: 
 
@@ -65,6 +74,8 @@ Each route may correspond to multiple trips. To get a basic understanding of how
 ### Figure 5: Top 10 Routes with Most Number of Trips for Each Route
 After plotting the histogram of distribution of routes with different number of trips, I choose the top 10 routes to reflect in details.
 
+![Top 10 Routes with Most Number of Trips for Each Route](https://github.com/huilyu2/project-spring2017/blob/master/part1/output-images/Top%2010%20Routes%20with%20Most%20Trips.png)
+
 * Approach: 
 
   Horizontal bar plot (number of trips as x-axis, route_id as y-axis, bars in their routes' colors, dotted grid line on x-axis)
@@ -75,6 +86,8 @@ After plotting the histogram of distribution of routes with different number of 
 
 ### Figure 6: Shapes of Routes with Most/Least Number of Trips
 To find if there exists any relationship between density of stops and number of trips for each route, I plot the shape lines of routes with most and least number of trips.
+
+![Shapes of Routes with Most/Least Number of Trips](https://github.com/huilyu2/project-spring2017/blob/master/part1/output-images/Shapes%20of%20Routes%20with%20Trips.png)
 
 * Approach: 
 
@@ -89,6 +102,8 @@ To find if there exists any relationship between density of stops and number of 
 
 ### Figure 7: Shapes in their Routes' Colors
 To get an overview of how shapes look like for each route, I make a line plot of all shapes in their routes' colors. This figure can be used to make comparisons with previous figures.
+
+![Shapes in their Routes' Colors](https://github.com/huilyu2/project-spring2017/blob/master/part1/output-images/Shapes%20in%20Routes%20Colors.png)
 
 * Approach: 
 
