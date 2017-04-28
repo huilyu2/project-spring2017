@@ -2,10 +2,12 @@
 ### Authors: QI QI & Yuxiang Ling of Group Athena
 
 This part of Data Visualization aims to generate a series of interactive figures to make analysis of distribution of Grants and its relationship with GDP by state. 
+
 Grant Data sources can be found at https://data.imls.gov/Administrative-Data/Administrative-Discretionary-Grants-FY-1996-2014-/kf5m-pcwv.
+
 The GDP Data by state can be found at https://commons.wikimedia.org/wiki/Data:Bea.gov/GDP_by_state.tab. 
 
-## 1. Grants' Type Contribution
+## 1. Grants Program Type Contribution
 
 ### Figure: Grants Program Type Distribution
 For this part of code, I refer to the previous assignment on defining a class in course LIS590DV, and then pass the csv dataset into it.
