@@ -49,7 +49,7 @@ This is the reference document. http://jupyter-gmaps.readthedocs.io/en/latest/gm
 
 ## 2. Routes with Different Numbers of Trips
 
-### Figure 1: Distribution of Routes with Different Numbers of Trips
+### Figure 4: Distribution of Routes with Different Numbers of Trips
 Each route may correspond to multiple trips. To get a basic understanding of how many trips (buses) are there for each route. I plot a histogram to see the distribution.
 
 * Approach: 
@@ -62,7 +62,7 @@ Each route may correspond to multiple trips. To get a basic understanding of how
   
   It can be found that for section "150-200", there is no value. I suppose it should be a key feature.
 
-### Figure 2: Top 10 Routes with Most Number of Trips for Each Route
+### Figure 5: Top 10 Routes with Most Number of Trips for Each Route
 After plotting the histogram of distribution of routes with different number of trips, I choose the top 10 routes to reflect in details.
 
 * Approach: 
@@ -73,7 +73,7 @@ After plotting the histogram of distribution of routes with different number of 
 
   Since the names of route_id are sort of long, I use horizontal bar plot to let them on the left side. I set the bars colors to be their corresponding routes' colors because we can clearly find some duplicate colors and it is easy to make comparisons with other figures. Exact numbers of trips of each route are also displayed right after the bars, making it more readable. Grid lines on x-axis are added to better show the relative position.
 
-### Figure 3: Shapes of Routes with Most/Least Number of Trips
+### Figure 6: Shapes of Routes with Most/Least Number of Trips
 To find if there exists any relationship between density of stops and number of trips for each route, I plot the shape lines of routes with most and least number of trips.
 
 * Approach: 
@@ -87,7 +87,7 @@ To find if there exists any relationship between density of stops and number of 
 
 ## 3. Shapes of Routes
 
-### Figure: Shapes in their Routes' Colors
+### Figure 7: Shapes in their Routes' Colors
 To get an overview of how shapes look like for each route, I make a line plot of all shapes in their routes' colors. This figure can be used to make comparisons with previous figures.
 
 * Approach: 
@@ -100,7 +100,7 @@ To get an overview of how shapes look like for each route, I make a line plot of
 
 ## 4. Bus Speeds for Shapes and Routes
 
-### Figure 1:
+### Figure 8:
 
 * Approach: 
 
@@ -110,7 +110,7 @@ To get an overview of how shapes look like for each route, I make a line plot of
 
   ...
 
-### Figure 2:
+### Figure 9:
 
 * Approach: 
 
