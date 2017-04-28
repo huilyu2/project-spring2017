@@ -28,11 +28,11 @@ For this part of code, I used folium package to make the main map.
   
 * Strengths: 
 
-All the quatitive data from different columns can be showed on one map and we can compare the quatitive data base on the size of the markers.
+  All the quatitive data from different columns can be showed on one map and we can compare the quatitive data base on the size of the markers.
   
 * Work for the future: 
 
-Still need a legend to show the marker color of different categories
+  Still need a legend to show the marker color of different categories
 
 ## 2. Detail informatin of the data 
 ### HTML popup: detail informatin of the data 
@@ -66,7 +66,7 @@ This part aim to compare the different quantitive data of different categories o
   
 * Work for the future: 
 
-Add the quatitive data of each markers on the popup
+  Add the quatitive data of each markers on the popup
 
 ## 4. The trend of the data
 ### Line chart popup: the quantitive data of different datetime
