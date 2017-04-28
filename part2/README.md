@@ -22,21 +22,24 @@ For this part of code, I refer to the previous assignment on defining a class in
  After that, I used barplot, which can decide the x-axis and y axis. I used the xticks() function to replace the numeric number with the charactor, which is the type of grants program. I also sorted the data with the descending sequence, and show the exact number on the top of each bar.
 
 
-## 2. Routes with Different Numbers of Trips
+## 2. The grants distributed across the United States
 
-### Figure: Distribution of Routes with Different Numbers of Trips
-Each route may correspond to multiple trips. To get a basic understanding of how many trips (buses) are there for each route. I plot a histogram to see the distribution.
+### Figure: Distribution of the grants distributed across the United States
+
+I used plotly to make a map to see the distribution and the cluster of the grants.
+
+For this part of code, I refer the example code of plotly and the method of how to make the markers correspond with the color scale and text showing bug was discussed with Yingjun's team.
 
 * Approach: 
 
-  histgram (number of trips for each route as x-axis, count of routes as y-axis, "Purples" colormap, dashed grid line on y-axis)
+  Plotly scatter map (Total Amount Awarded and Disbursed)
 
 * Explanation: 
 
-  Histgram is one of the best ways to demonstrate the distribution. The result shows that it is an obvious right-skewed distribution. I set the colormap to intuitively see the tendency of the data based on the depth of the color. Besides, I only turn on the grid line on y-axis since the edges of each bar can defintely represent the exact value of x-axis.
+  The size of the markers are based on the number of the total amount awarded and disbursed. I seperate the data into 5 groups allowed us to see the data of different amount by click the legend. The detail data can be showed by move the cursor on the markers including the latitude, lontitude, name of the program, Total Amount Awarded and Disbursed, and the sate. We could find that most program are located on the east part of USA main land. Most of the big brograms (have bigger amount awarded) are located on the east part of USA main land. There are few program have total amount awarded bigger than 1 million.
   
-  It can be found that for section "150-200", there is no value. I suppose it should be a key feature.
-
+ In the first version of this part, I used the baground map of USA just like the example in the plotly offical guide. However, some of the data can not be showed on the map and the text box can not be showed neither. The reason for this bug is that some programs are not in the main land of USA which is out of the baground map. I chose not to delete the outliners but to use a bigger map, so I changed the baground map to north American map and it showed the data and text successfully. 
+ 
 ## 3. GDP Compared with the Grants Amount by state.
 
 ### Figure 1: GDP vs Grants Amount by state based on American map
@@ -73,5 +76,4 @@ To get an specific view of the relationship between the economic factors in a zi
   Part 1 and Part 3 in Jupyter Notebook using Python  
 
 * Yuxiang Ling:
- SQL for data cleaning and preprocessing
- ...
+ Part 2 in Jupyter Notebook using Python
