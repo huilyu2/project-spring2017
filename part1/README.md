@@ -99,26 +99,44 @@ To get an overview of how shapes look like for each route, I make a line plot of
   One shape corresponds to one route, and a route can have multiple shapes. My first preprocessing work is to find the correlation between shape_id and route_color, by virtue of several datasets. To display the legend, I manually set the names of each color, since several routes share the same color. I turn on the grid lines to help better locate the positions.
 
 ## 4. Bus Speeds for Shapes and Routes
-
-### Figure 8:
-
-* Approach: 
-
-  ...
-
-* Explanation: 
-
-  ...
-
-### Figure 9:
+Figure 8 and Figure 9 answer the question of "How quickly ..." and they can be used for transit data analysis together. The key attributes used in Figure 7 are shape_id, lat, lon in SHAPE table, stop_time in STOP_TIMES. We fisrt compute the period that each trips(represent its route) will take and use this information to find out how many transit trips(frequency) this route can run per hour.
+### Figure 8: Transit Freuquency
 
 * Approach: 
 
-  ...
+  scatter plot group by shape_id(legend of transit frequency  "< 4", "4 - 8", "8 <")
 
 * Explanation: 
 
-  ...
+  In fact, this is a my first solution to "How quickly...". That is, use frequency to represent how quickly different routes can run per hour. Then another question arises that the most frequent transit might not be the fast transit and it is perhaps the slowest. Because it may happen to run the shortest route and then finish its trips in the shortest time. Based on the transit frequency, I divided it into 3 parts: route with less than 4 trips/hour, more than 8 trips/hour and the remain.
+
+### Figure 9:Average Speed of Each Trip
+
+* Approach: 
+
+  scatter plot group by shape_id(legent of transit speed "< 300", "300 - 600", "600 <")
+
+* Explanation: 
+
+  Finally I decide to use "distance/period =  average speed" to answer this question directly. First I compute the distance of each route using the "shape_dist_traveled" in SHAPE table and compute period of a representative trip for each route. Since in the trips table, some trips may run on the same route, so I pick up only one trip randomly from each trips of the same route as the representative trip for this route. Similarly, I divide it into 3 parts: speed greater than 600 feet/minute, less than 300 feet/minute and the remain.
+
+Having an overview of the whole routes speed info, let pick up one route called "ORANGE" and dig deeper into its speed info. The following two figures show the route of "ORANGE" route. The former show the different stop areas and this figure is to prepared for the latter one. The second one shows different speed between stops.
+
+### Figure 10: Route Orange Bus Stop
+* Approach: 
+
+  scatter plot group by stop_area
+
+* Explanation: 
+  This figure is just for ORANGE route stop information. I created this figure to help reader see different stop areas clearly. According to the figure, there are 7 stops and 6 stop areas in total colored with 7 different colors. Because reader might not differentiate stop area in the following figure. I used 7 bus stops to create a new attribute called stop "stop_area_code" for easy shape coloring. All shape point belong to the same stop area will have the same color.
+
+### Figure 11: Route Orange Speed
+* Approach: 
+
+  scatter plot group by stop_area(legend of transit speed "< 300", "300 - 600", "600 <")
+
+* Explanation: 
+  Different from the the Figure 9 which use average speed of the whole route, I compute the average speed of each stop area. According to the figure, in the first stop areas this trip run less than 600 feet/minute while in the following 4 stop areas this trip cun faster at over 600 feet/minute.
 
 ## Contributions of Members
 
@@ -126,5 +144,6 @@ To get an overview of how shapes look like for each route, I make a line plot of
   The first seven figures in Jupyter Notebook using Python  
 
 * Yuwei Chen:
- SQL for data cleaning and preprocessing
- ...
+ Build Transit database
+ SQL for transit data cleaning and preprocessing
+ The last four figures in Jupyter Notebook using Python
