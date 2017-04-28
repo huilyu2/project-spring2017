@@ -41,6 +41,8 @@ I used plotly to make a map to see the distribution and the cluster of the grant
 
 For this part of code, I refer the example code of plotly and the method of how to make the markers correspond with the color scale and text showing bug was discussed with Yingjun's team.
 
+![Grants Program Type Distribution](https://github.com/huilyu2/project-spring2017/blob/master/part2/Output%20Images/Out%20put%20of%20Part3%20Q2)
+
 * Approach: 
 
   Plotly scatter map (Total Amount Awarded and Disbursed)
