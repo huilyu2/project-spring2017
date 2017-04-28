@@ -144,6 +144,6 @@ Having an overview of the whole routes speed info, let pick up one route called 
   The first seven figures in Jupyter Notebook using Python  
 
 * Yuwei Chen:
- 1. Build Transit database.
- 2. SQL for transit data cleaning and preprocessing
- 3. The last four figures in Jupyter Notebook using Python
+  1. Build Transit database.
+  2. SQL for transit data cleaning and preprocessing
+  3. The last four figures in Jupyter Notebook using Python
