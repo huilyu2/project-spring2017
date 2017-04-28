@@ -7,7 +7,7 @@ The test data is designed my ourselves.
 Packages be used: folium, vincent, pandas, numpy 
 
 The ideal visualiztion is to show all the graph on one image or window.
-## 1. Overview of  3 different quantative data
+## 1. The distribution of quantative data across the world
 
 ### Map : main map of quatative data
 For this part of code, I used folium package to make the main map.
